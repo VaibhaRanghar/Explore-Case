@@ -12,7 +12,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/hero-bg.jpeg"
+          src="/hero-bg.avif"
           alt="Beautiful landscape"
           fill
           className="object-cover blur-[5px]"

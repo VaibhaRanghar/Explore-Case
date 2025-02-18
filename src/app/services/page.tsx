@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Compass, Briefcase, Car, Plane, Check } from "lucide-react";
-import hotel from "../../../public/hotel.jpg";
-import charDham from "../../../public/charDham.jpg";
-import car from "../../../public/car.jpg";
-import helicopter from "../../../public/helicopter.jpg";
+import hotel from "../../../public/hotel.webp";
+import charDham from "../../../public/charDham.webp";
+import car from "../../../public/car.webp";
+import helicopter from "../../../public/helicopter.webp";
 
 const services = [
   {
@@ -51,7 +51,6 @@ const services = [
   },
 ];
 
-
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-gray-100 pb-16">
@@ -68,9 +67,7 @@ export default function ServicesPage() {
             className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center  bg-emerald-50 rounded-lg "
           >
             <div
-              className={`space-y-4 ${
-                index % 2 === 1 ? "md:order-2 " : ""
-              }`}
+              className={`space-y-4 ${index % 2 === 1 ? "md:order-2 " : ""}`}
             >
               <div className="flex items-center space-x-2">
                 <service.icon className="w-8 h-8 text-emerald-600" />

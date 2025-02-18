@@ -9,8 +9,7 @@ import {
 } from "@/components/ui/dialog";
 import Image from "next/image";
 import travel from "../../public/bookNow.svg";
-import { toast } from "@/hooks/use-toast";
-import { Toaster } from "./ui/toaster";
+import { Toaster } from "react-hot-toast";
 
 interface BookNowPopupProps {
   isOpen: boolean;
@@ -18,25 +17,9 @@ interface BookNowPopupProps {
 }
 
 export default function BookNowPopup({ isOpen, onClose }: BookNowPopupProps) {
-  const handleClick = async () => {
-    try {
-      await navigator.clipboard.writeText("info@explorecase.in");
-      toast({
-        title: "Copied!",
-        description: "Email address copied to clipboard.",
-      });
-      console.log("Copied");
-    } catch (err) {
-      console.error("Failed to copy email: ", err);
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: "Failed to copy email address.",
-      });
-    }
-  };
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
+      <Toaster position="top-center" />
       <DialogContent className="sm:max-w-[425px] ">
         <div className="border border-slate-200 rounded-xl">
           <DialogHeader>
@@ -53,17 +36,13 @@ export default function BookNowPopup({ isOpen, onClose }: BookNowPopupProps) {
               <Phone className="mr-2" size={20} />
               Call Us
             </Button>
-            <Button
-              className="w-full flex items-center justify-center"
-              onClick={handleClick}
-            >
+            <div className="w-full flex items-center justify-center">
               <Mail className="mr-2" size={20} />
               Email Us at info@explorecase.in
-            </Button>
+            </div>
           </div>
         </div>
       </DialogContent>
-      <Toaster />
     </Dialog>
   );
 }

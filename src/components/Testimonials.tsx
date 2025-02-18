@@ -1,24 +1,25 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Quote } from "lucide-react";
+import userIcon from "../../public/userIcon.svg";
 
 const testimonials = [
   {
     name: "Jessica Turner",
     location: "United Kingdom",
-    image: "/placeholder.svg?height=100&width=100",
+    image: userIcon,
     text: "“The team at Dogsie is simply amazing. They treated my dog, Bella, with so much care and compassion during her surgery. I couldn't have asked for better service.”",
   },
   {
     name: "Michael Rivera",
     location: "France",
-    image: "/placeholder.svg?height=100&width=100",
+    image: userIcon,
     text: "“Dogsie has been a lifesaver for our family. The emergency care they provided for our cat, Whiskers, was quick and professional. I'll never go anywhere else.”",
   },
   {
     name: "Emily Chen",
     location: "Japan",
-    image: "/placeholder.svg?height=100&width=100",
+    image: userIcon,
     text: "“From routine checkups to dental cleanings, Dogsie always goes above and beyond. My golden retriever, Max, is in the best hands.”",
   },
 ];

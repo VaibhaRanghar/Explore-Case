@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -31,6 +32,7 @@ export default function RootLayout({
       >
         <Navbar />
         <section className="pt-20">{children}</section>
+        
         <Footer />
       </body>
     </html>

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { toast } from "@/hooks/use-toast";
+import toast from "react-hot-toast";
 
 type FormData = {
   name: string;
@@ -24,15 +24,19 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const onSubmit = async (data: FormData) => {
-    setIsSubmitting(true);
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    setIsSubmitting(false);
-    toast({
-      title: "Form submitted!",
-      description: "We'll get back to you soon.",
-    });
-    console.log(data);
+    try {
+      setIsSubmitting(true);
+      // Simulate form submission
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      setIsSubmitting(false);
+      toast.success("Form submitted");
+      console.log(data);
+    } catch (err) {
+      console.log(err);
+      toast.error("Something went wrong");
+      setIsSubmitting(false);
+    }
   };
 
   return (

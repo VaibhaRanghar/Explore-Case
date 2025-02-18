@@ -19,6 +19,7 @@ export default function ContactForm() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<FormData>();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -30,6 +31,7 @@ export default function ContactForm() {
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
       setIsSubmitting(false);
+      reset();
       toast.success("Form submitted");
       console.log(data);
     } catch (err) {

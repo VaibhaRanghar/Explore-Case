@@ -7,10 +7,15 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import BookNowPopup from "./BookNowPopup";
 import logo from "../../public/logo1.png";
+import { usePathname } from "next/navigation"; //Use pathName
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  //Current pathName
+  const pathname = usePathname();
+  console.log(pathname);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
@@ -25,25 +30,44 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
-            <Link href="/" className="text-gray-600 hover:text-emerald-600">
+          <div className="hidden md:flex items-center gap-8 text-gray-600">
+            <Link
+              href="/"
+              className={` hover:text-emerald-600 ${
+                pathname === "/"
+                  ? "text-emerald-600 underline underline-offset-4 decoration-2 "
+                  : ""
+              }`}
+            >
               Home
             </Link>
             <Link
               href="/services"
-              className="text-gray-600 hover:text-emerald-600"
+              className={` hover:text-emerald-600 ${
+                pathname === "/services"
+                  ? "text-emerald-600 underline underline-offset-4 decoration-2 "
+                  : ""
+              }`}
             >
               Services
             </Link>
             <Link
               href="/about"
-              className="text-gray-600 hover:text-emerald-600"
+              className={` hover:text-emerald-600 ${
+                pathname === "/about"
+                  ? "text-emerald-600 underline underline-offset-4 decoration-2 "
+                  : ""
+              }`}
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="text-gray-600 hover:text-emerald-600"
+              className={` hover:text-emerald-600 ${
+                pathname === "/contact"
+                  ? "text-emerald-600 underline underline-offset-4 decoration-2 "
+                  : ""
+              }`}
             >
               Contact
             </Link>
@@ -59,31 +83,39 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden py-4">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 text-gray-600">
               <Link
-                href="#destinations"
-                className="text-gray-600 hover:text-emerald-600"
+                href="/"
+                className={` hover:text-emerald-600 ${
+                  pathname === "/" ? "text-emerald-600" : ""
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/services"
-                className="text-gray-600 hover:text-emerald-600"
+                className={` hover:text-emerald-600 ${
+                  pathname === "/services" ? "text-emerald-600" : ""
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 Services
               </Link>
               <Link
-                href="#about"
-                className="text-gray-600 hover:text-emerald-600"
+                href="/about"
+                className={` hover:text-emerald-600 ${
+                  pathname === "/about" ? "text-emerald-600" : ""
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/contact"
-                className="text-gray-600 hover:text-emerald-600"
+                className={` hover:text-emerald-600 ${
+                  pathname === "/contact" ? "text-emerald-600" : ""
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 Contact

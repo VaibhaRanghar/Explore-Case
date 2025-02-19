@@ -1,14 +1,18 @@
 "use client";
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import BookNowPopup from "./BookNowPopup";
-import { useState } from "react";
+import { Calendar } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Hero() {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-
   return (
-    <div className="relative min-h-screen flex items-center justify-center">
+    <motion.div
+      className="relative min-h-screen flex items-center justify-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -22,33 +26,52 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-xl">
+      <motion.div
+        className="relative z-10 container mx-auto px-4 text-center text-white"
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.1, duration: 0.8 }}
+      >
+        <motion.h1
+          className="text-5xl md:text-7xl font-bold mb-6"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+        >
           Discover Your Next
-          <span className="block mt-2 text-emerald-400  drop-shadow-2xl">
+          <motion.span
+            className="block mt-2 text-emerald-400"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+          >
             Adventure
-          </span>
-        </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-gray-200 drop-shadow-xl ">
+          </motion.span>
+        </motion.h1>
+        <motion.p
+          className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-gray-200"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+        >
           Explore breathtaking destinations and create unforgettable memories
           with our curated travel experiences
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+        </motion.p>
+        <motion.div
+          className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+        >
           <Button
-            variant={"outline"}
+            size="lg"
+            variant="outline"
             className="text-black border-white hover:bg-white/10"
-            onClick={() => {
-              setIsPopupOpen(true);
-            }}
           >
-            Book Now
+            <Calendar className="mr-2" /> Plan Your Trip
           </Button>
-        </div>
-      </div>
-      <BookNowPopup
-        isOpen={isPopupOpen}
-        onClose={() => setIsPopupOpen(false)}
-      />
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }

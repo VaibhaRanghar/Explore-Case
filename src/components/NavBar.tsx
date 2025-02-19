@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import BookNowPopup from "./BookNowPopup";
-import logo from "../../public/logo1.png";
+import logo from "../../public/logo1.svg";
 import { usePathname } from "next/navigation"; //Use pathName
 
 export default function Navbar() {

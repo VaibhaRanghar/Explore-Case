@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Calendar } from "lucide-react";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import BookNowPopup from "./BookNowPopup";
 
 export default function Hero() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   return (
     <motion.div
       className="relative min-h-screen flex items-center justify-center"
@@ -67,11 +69,18 @@ export default function Hero() {
             size="lg"
             variant="outline"
             className="text-black border-white hover:bg-white/10"
+            onClick={() => {
+              setIsPopupOpen(true);
+            }}
           >
-            <Calendar className="mr-2" /> Plan Your Trip
+            Book Now
           </Button>
         </motion.div>
       </motion.div>
+      <BookNowPopup
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+      />
     </motion.div>
   );
 }

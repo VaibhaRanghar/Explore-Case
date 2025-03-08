@@ -34,6 +34,7 @@ export const metadata: Metadata = {
   ],
   title: "Explore Case",
   description: "Travel Agency",
+  
 };
 
 export default function RootLayout({

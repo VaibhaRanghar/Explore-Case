@@ -6,24 +6,24 @@ import { useRef } from "react";
 
 const reasons = [
   {
-    title: "Wellness exams & Diagnostic Testing",
+    title: "Tailored Travel Packages",
     description:
-      "Routine checkups are essential to your pet's health and happiness. Our comprehensive wellness exams focus on early detection of potential health issues, ensuring your pet stays healthy at every stage of life.",
+      "We create customized travel experiences that match your interests, budget, and schedule, ensuring a seamless and personalized journey, whether you seek adventure, relaxation, or cultural exploration",
   },
   {
-    title: "Urgent Care & Emergencies",
+    title: " Premium Accommodations ",
     description:
-      "When every second counts, we're here to provide prompt, life-saving care for your pets. From sudden illnesses to accidents, our experienced team is ready to act quickly and compassionately to ensure your pet gets the critical attention they need.",
+      "Enjoy top-rated hotels, resorts, and homestays, ensuring a comfortable and luxurious stay. We offer a range of options, from budget-friendly stays to five-star luxury, tailored to your needs.",
   },
   {
-    title: "Unforgettable Experiences",
+    title: " Experienced Travel Experts",
     description:
-      "Discover hidden gems and create lasting memories. Discover hidden gems and create lasting memories. Discover hidden gems and create lasting memories",
+      "Our seasoned travel professionals provide expert guidance, local insights, and seamless planning to ensure a hassle-free, well-curated travel experience, making your journey smooth and enjoyable.",
   },
   {
-    title: "24/7 Veterinary Support",
+    title: "Affordable Pricing ",
     description:
-      "When every second counts, we're here to provide prompt, life-saving care for your pets. From sudden illnesses to accidents, our experienced team is ready to act quickly and compassionately to ensure your pet gets the critical attention they need.",
+      "Enjoy high-quality travel at competitive prices with no hidden costs. We offer the best deals and transparent pricing, ensuring an unforgettable experience that fits your budget.",
   },
 ];
 function useParallax(value: MotionValue<number>, distance: number) {
@@ -58,7 +58,7 @@ export default function WhyChooseUs() {
                 <div className="w-12 h-12 mx-auto mb-4 bg-emerald-100 rounded-full flex items-center justify-center">
                   <CheckCircle className="w-6 h-6 text-emerald-600" />
                 </div>
-                <CardTitle>{reason.title}</CardTitle>
+                <CardTitle className="text-lg">{reason.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">{reason.description}</p>

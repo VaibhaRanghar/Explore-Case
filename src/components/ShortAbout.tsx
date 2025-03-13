@@ -7,7 +7,7 @@ function ShortAbout() {
         <h2 className="text-3xl font-bold p-5 ">
           Best Char Dham Yatra Packages – Book with Explore Case Now
         </h2>
-        <p className="text-gray-600 text-justify mx-auto px-20 ">
+        <div className="text-gray-600 text-justify mx-auto px-20 ">
           At Explore Case, we specialize in crafting customized Char Dham
           packages that cater to individual, family, and group travel needs. We
           take care of all your travel requirements, including premium hotel
@@ -48,7 +48,7 @@ function ShortAbout() {
             every detail is planned with care to provide a peaceful, sacred, and
             rejuvenating journey.
           </p>
-        </p>
+        </div>
       </center>
     </div>
   );

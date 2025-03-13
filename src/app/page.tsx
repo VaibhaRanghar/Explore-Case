@@ -1,3 +1,4 @@
+import CarouselSlider from "@/components/CarouselSlider";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/NavBar";
 import ShortAbout from "@/components/ShortAbout";
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <ShortAbout />
+      <CarouselSlider />
       <WhyChooseUs />
       <Testimonials />
     </div>

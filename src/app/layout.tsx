@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/footer";
+import WhatsAppButton from "@/components/WhatsappBtn";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +35,6 @@ export const metadata: Metadata = {
   ],
   title: "Explore Case",
   description: "Travel Agency",
-  
 };
 
 export default function RootLayout({
@@ -48,8 +48,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <section className="pt-20">{children}</section>
-
+        <section className="pt-20">{children} </section>
+        <WhatsAppButton phoneNumber=" 8126912729" />
         <Footer />
       </body>
     </html>

@@ -20,3 +20,10 @@ This website is designed to offer a seamless and informative experience for user
 *   **Lucide React:** SVG icons.
 *   **Resend:** Reliable email sending service (or similar).
   
+
+<-------------------------------------------------------------------------------------------------------------->
+
+Change Why Choose us points images.
+Mail to gmail.
+Contact form data to mail.
+Whatsapp floating button.

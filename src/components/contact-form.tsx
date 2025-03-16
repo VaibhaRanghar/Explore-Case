@@ -27,16 +27,27 @@ export default function ContactForm() {
   const onSubmit = async (data: FormData) => {
     try {
       setIsSubmitting(true);
-      // Simulate form submission
-      await new Promise((resolve) => setTimeout(resolve, 1000));
 
-      setIsSubmitting(false);
-      reset();
-      toast.success("Form submitted");
-      console.log(data);
+      // Make a POST request to the API route
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        toast.success("Email sent successfully!");
+        reset(); // Reset the form fields
+      } else {
+        const errorData = await response.json();
+        toast.error(errorData.error || "Failed to send email.");
+      }
     } catch (err) {
-      console.log(err);
-      toast.error("Something went wrong");
+      console.error(err);
+      toast.error("Something went wrong. Please try again.");
+    } finally {
       setIsSubmitting(false);
     }
   };
@@ -47,7 +58,7 @@ export default function ContactForm() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
       onSubmit={handleSubmit(onSubmit)}
-      className="space-y-6 bg-white p-8 rounded-lg shadow-lg "
+      className="space-y-6 bg-white p-8 rounded-lg shadow-lg"
     >
       <h1 className="text-4xl font-bold text-gray-800 text-center">
         Get in Touch

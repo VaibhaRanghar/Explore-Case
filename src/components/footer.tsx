@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram } from "lucide-react";
+import { Instagram, Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -9,13 +9,14 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-lg font-bold mb-4">Explore Case</h3>
             <p className="text-sm">
-              Creating unforgettable travel experiences and memories that last a
-              lifetime.
+              We are one of the leading travel agency in Dehradun, Uttarakhand.
+              We believe that time to time services and well-managed packages
+              are the only way to earn customer satisfaction.
             </p>
           </div>
           <div>
             <h4 className="text-white text-sm font-semibold mb-4">
-              Quick Links
+              Useful Links:
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
@@ -41,7 +42,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="text-white text-sm font-semibold mb-4">Contact</h4>
+            <h4 className="text-white text-sm font-semibold mb-4">Contact:</h4>
             <ul className="space-y-2 text-sm">
               <li>Email: info@explorecase.in</li>
               <li>Phone: +91 8126912729</li>
@@ -49,16 +50,27 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="text-white text-sm font-semibold mb-4">Follow Us</h4>
+            <h4 className="text-white text-sm font-semibold mb-4">
+              Follow Us:
+            </h4>
             <div className="flex space-x-4">
-              <Link href="#" className="hover:text-white">
+              <Link
+                href="https://www.instagram.com/explore.case/profilecard/?igsh=YWoxbWc1eWtocW82"
+                className="hover:text-white"
+              >
                 <Instagram className="w-5 h-5" />
+              </Link>
+              <Link
+                href="https://www.facebook.com/share/1BPn5ghTEF/?mibextid=wwXIfr"
+                className="hover:text-white"
+              >
+                <Facebook className="w-5 h-5" />
               </Link>
             </div>
           </div>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
-          <p>© {new Date().getFullYear()} Wanderlust. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Explore Case. All rights reserved.</p>
         </div>
       </div>
     </footer>

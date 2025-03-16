@@ -31,14 +31,29 @@ export default function BookNowPopup({ isOpen, onClose }: BookNowPopupProps) {
           <div className="grid gap-4 py-4  px-3">
             <Button
               className="w-full flex items-center justify-center"
-              onClick={() => (window.location.href = "tel:+918126912729")}
+              onClick={() => (window.location.href = "tel:+917078235487")}
             >
               <Phone className="mr-2" size={20} />
               Call Us
             </Button>
             <div className="w-full flex items-center justify-center">
-              <Mail className="mr-2" size={20} />
-              Email Us at info@explorecase.in
+              <Button className="w-full flex items-center justify-center">
+                <Mail className="mr-2" size={20} />
+                <a
+                  href="mailto:info@explorecase.in"
+                  target="_blank"
+                  className="md:hidden"
+                >
+                  Email Us at info@explorecase.in
+                </a>{" "}
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=info@explorecase.in"
+                  target="_blank"
+                  className="hidden md:inline"
+                >
+                  Email Us at info@explorecase.in
+                </a>
+              </Button>
             </div>
           </div>
         </div>

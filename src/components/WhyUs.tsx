@@ -1,27 +1,35 @@
 "use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
-import { CheckCircle } from "lucide-react";
 import { useRef } from "react";
+import pricing from "../../public/whyChooseUs/money.png";
+import business from "../../public/whyChooseUs/businessman.png";
+import travel from "../../public/whyChooseUs/passport.png";
+import hotel from "../../public/whyChooseUs/hotel.png";
+import Image from "next/image";
 
 const reasons = [
   {
     title: "Tailored Travel Packages",
+    image: business,
     description:
       "We create customized travel experiences that match your interests, budget, and schedule, ensuring a seamless and personalized journey, whether you seek adventure, relaxation, or cultural exploration",
   },
   {
     title: " Premium Accommodations ",
+    image: hotel,
     description:
       "Enjoy top-rated hotels, resorts, and homestays, ensuring a comfortable and luxurious stay. We offer a range of options, from budget-friendly stays to five-star luxury, tailored to your needs.",
   },
   {
     title: " Experienced Travel Experts",
+    image: travel,
     description:
       "Our seasoned travel professionals provide expert guidance, local insights, and seamless planning to ensure a hassle-free, well-curated travel experience, making your journey smooth and enjoyable.",
   },
   {
     title: "Affordable Pricing ",
+    image: pricing,
     description:
       "Enjoy high-quality travel at competitive prices with no hidden costs. We offer the best deals and transparent pricing, ensuring an unforgettable experience that fits your budget.",
   },
@@ -56,7 +64,13 @@ export default function WhyChooseUs() {
             >
               <CardHeader>
                 <div className="w-12 h-12 mx-auto mb-4 bg-emerald-100 rounded-full flex items-center justify-center">
-                  <CheckCircle className="w-6 h-6 text-emerald-600" />
+                  <Image
+                    src={reason.image}
+                    alt={reason.title}
+                    height={100}
+                    width={100}
+                    className="w-6 h-6 text-emerald-600"
+                  />
                 </div>
                 <CardTitle className="text-lg">{reason.title}</CardTitle>
               </CardHeader>

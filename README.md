@@ -8,18 +8,17 @@ This website is designed to offer a seamless and informative experience for user
 
 ## Features
 
-*   **Travel Package Exploration:** View curated Char Dham Yatra packages with details and images.
-*   **Contact Form:** Submit inquiries and contact the Explore Case team directly.
-*   **Responsive Design:** Fully responsive layout optimized for all devices.
-*   **Modern UI:** Clean and engaging user interface built with Tailwind CSS.
+- **Travel Package Exploration:** View curated Char Dham Yatra packages with details and images.
+- **Contact Form:** Submit inquiries and contact the Explore Case team directly.
+- **Responsive Design:** Fully responsive layout optimized for all devices.
+- **Modern UI:** Clean and engaging user interface built with Tailwind CSS.
 
 ## Technologies Used
 
-*   **Next.js:** React framework for building server-rendered and statically generated applications.
-*   **Tailwind CSS:** Utility-first CSS framework for rapid UI development.
-*   **Lucide React:** SVG icons.
-*   **Resend:** Reliable email sending service (or similar).
-  
+- **Next.js:** React framework for building server-rendered and statically generated applications.
+- **Tailwind CSS:** Utility-first CSS framework for rapid UI development.
+- **Lucide React:** SVG icons.
+- **Resend:** Reliable email sending service (or similar).
 
 <-------------------------------------------------------------------------------------------------------------->
 
@@ -27,3 +26,6 @@ Change Why Choose us points images.
 Mail to gmail.
 Contact form data to mail.
 Whatsapp floating button.
+These above changes are done.
+
+<-------------------------------------------------------------------------------------------------------------->

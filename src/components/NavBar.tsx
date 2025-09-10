@@ -15,7 +15,6 @@ export default function Navbar() {
 
   //Current pathName
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">

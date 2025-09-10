@@ -5,7 +5,7 @@ function ShortAbout() {
     <div className="py-10 ">
       <center>
         <h2 className="text-3xl font-bold p-5 ">
-          Best Char Dham Yatra Packages – Book with Explore Case Now
+          Best Char Dham Yatra Packages - Book with Explore Case Now
         </h2>
         <div className="text-gray-600 text-justify mx-auto px-3 lg:px-36 py-5 ">
           At Explore Case, we specialize in crafting customized Char Dham

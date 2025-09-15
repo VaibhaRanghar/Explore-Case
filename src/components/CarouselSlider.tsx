@@ -77,17 +77,12 @@ function CarouselSlider() {
   return (
     <div className="py-10 bg-emerald-50">
       <center>
-        <h1 className="text-3xl font-bold mb-4">
+        <h2 className="text-3xl font-bold mb-4">
           Our Uttarakhand Tour Packages
-        </h1>
+        </h2>
       </center>
       <ul className="w-4/5 m-auto">
-        <Marquee
-          pauseOnHover
-          speed={100}
-          className="gap-6"
-         
-        >
+        <Marquee pauseOnHover speed={100} className="gap-6">
           {datax.map((item, index) => (
             <SliderItem key={index} images={item.images} name={item.name} />
           ))}

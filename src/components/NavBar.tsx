@@ -13,7 +13,6 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  //Current pathName
   const pathname = usePathname();
 
   return (

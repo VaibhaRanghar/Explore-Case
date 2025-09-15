@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 import tsAnimate from "tailwindcss-animate";
-
+import daisyui from "daisyui";
 export default {
   darkMode: ["class"],
   content: [
@@ -10,7 +10,6 @@ export default {
   ],
   theme: {
     extend: {
-      
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -60,5 +59,14 @@ export default {
       },
     },
   },
-  plugins: [tsAnimate],
+  plugins: [tsAnimate, daisyui],
+  daisyui: {
+    themes: ["light", "dark"], // Only basic themes
+    base: true,
+    styled: true,
+    utils: true,
+    prefix: "",
+    logs: false, // Disable logs to reduce noise
+    themeRoot: ":root",
+  },
 } satisfies Config;

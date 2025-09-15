@@ -22,10 +22,8 @@ This website is designed to offer a seamless and informative experience for user
 
 <-------------------------------------------------------------------------------------------------------------->
 
-Change Why Choose us points images.
-Mail to gmail.
-Contact form data to mail.
-Whatsapp floating button.
-These above changes are done.
+SEO for images.(title, head tags).
+Review section covert to crousel.
+Add adventure section or our Exeriences section.
 
 <-------------------------------------------------------------------------------------------------------------->

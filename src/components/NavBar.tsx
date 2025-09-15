@@ -25,7 +25,7 @@ export default function Navbar() {
             className="text-2xl font-bold text-emerald-600 flex gap-4 items-center"
             onClick={() => setIsOpen(false)}
           >
-            <Image src={logo} height={40} width={40} alt="LOGO" /> ExploreCase
+            <Image src={logo} height={40} width={40} alt="Logo" /> ExploreCase
           </Link>
 
           {/* Desktop Menu */}

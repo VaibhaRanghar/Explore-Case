@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Instagram, Facebook } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,7 +8,12 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-white text-lg font-bold mb-4">Explore Case</h3>
+            <h3 className="text-white text-lg font-bold mb-4 flex items-center ">
+              Explore Case{" "}
+              <span>
+                <Image src={"/logo.png"} alt="Logo" width={40} height={40} />
+              </span>
+            </h3>
             <p className="text-sm">
               We are one of the leading travel agency in Dehradun, Uttarakhand.
               We believe that time to time services and well-managed packages

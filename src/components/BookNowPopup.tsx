@@ -23,7 +23,7 @@ export default function BookNowPopup({ isOpen, onClose }: BookNowPopupProps) {
       <DialogContent className="sm:max-w-[425px] ">
         <div className="border border-slate-200 rounded-xl">
           <DialogHeader>
-            <Image src={travel} alt="Booking Image" />
+            <Image src={travel} alt="Book your trip image" />
             <DialogTitle className="self-center p-4 text-2xl">
               Book Your Trip
             </DialogTitle>

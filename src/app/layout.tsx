@@ -34,7 +34,8 @@ export const metadata: Metadata = {
     },
   ],
   title: "Explore Case",
-  description: "Travel Agency",
+  description:
+    "Explore Case is a trusted travel agency offering India & International tour packages, Char Dham Yatra, adventure trips, hotels & transport. Book your journey today",
 };
 
 export default function RootLayout({

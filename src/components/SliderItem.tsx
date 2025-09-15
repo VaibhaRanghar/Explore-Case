@@ -9,7 +9,7 @@ function SliderItem({ images, name }: { images: string; name: string }) {
     <div className="shadow-lg rounded-md  border-2 shadow-slate-400 m-4 flex flex-col bg-white">
       <Image
         src={images || "/bookNow.svg"}
-        alt="ItemImage"
+        alt={name}
         width={200}
         height={200}
         className="w-full h-1/2 object-cover"

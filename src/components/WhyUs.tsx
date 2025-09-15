@@ -16,13 +16,13 @@ const reasons = [
       "We create customized travel experiences that match your interests, budget, and schedule, ensuring a seamless and personalized journey, whether you seek adventure, relaxation, or cultural exploration",
   },
   {
-    title: " Premium Accommodations ",
+    title: "Premium Accommodations ",
     image: hotel,
     description:
       "Enjoy top-rated hotels, resorts, and homestays, ensuring a comfortable and luxurious stay. We offer a range of options, from budget-friendly stays to five-star luxury, tailored to your needs.",
   },
   {
-    title: " Experienced Travel Experts",
+    title: "Experienced Travel Experts",
     image: travel,
     description:
       "Our seasoned travel professionals provide expert guidance, local insights, and seamless planning to ensure a hassle-free, well-curated travel experience, making your journey smooth and enjoyable.",

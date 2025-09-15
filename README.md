@@ -22,8 +22,4 @@ This website is designed to offer a seamless and informative experience for user
 
 <-------------------------------------------------------------------------------------------------------------->
 
-SEO for images.(title, head tags).
-Review section covert to crousel.
-Add adventure section or our Exeriences section.
-
 <-------------------------------------------------------------------------------------------------------------->

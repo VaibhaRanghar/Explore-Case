@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -14,6 +14,11 @@ const VehicleShowcase = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768);
+  }, []);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -68,7 +73,6 @@ const VehicleShowcase = () => {
     const zIndex = isCenter ? 10 : Math.abs(position) === 1 ? 5 : 1;
 
     // Responsive adjustments
-    const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
     if (isMobile) {
       translateX = position * 200;
       rotateY = position * -20;

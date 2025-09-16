@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram, Facebook, Twitter } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -71,6 +71,12 @@ export default function Footer() {
                 className="hover:text-white"
               >
                 <Facebook className="w-5 h-5" />
+              </Link>
+              <Link
+                href="https://x.com/explore_case?s=21"
+                className="hover:text-white"
+              >
+                <Twitter className="w-5 h-5" />
               </Link>
             </div>
           </div>

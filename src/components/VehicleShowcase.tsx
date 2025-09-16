@@ -1,9 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import slide_image_1 from "../../public/cars/car1.jpg";
-import slide_image_2 from "../../public/cars/car2.jpg";
-import slide_image_3 from "../../public/cars/car3.jpg";
-import slide_image_4 from "../../public/cars/car4.webp";
 import Image from "next/image";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -11,10 +7,10 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const VehicleShowcase = () => {
   // Sample car images - replace with your actual images
   const slides = [
-    { id: 1, src: slide_image_1, alt: "Maruti Ertiga" },
-    { id: 2, src: slide_image_2, alt: "Swift" },
-    { id: 3, src: slide_image_3, alt: "Traveller" },
-    { id: 4, src: slide_image_4, alt: "Innova" },
+    { id: 1, src: "/cars/car1.jpg", alt: "Maruti Ertiga" },
+    { id: 2, src: "/cars/car2.jpg", alt: "Swift" },
+    { id: 3, src: "/cars/car3.jpg", alt: "Traveller" },
+    { id: 4, src: "/cars/car4.webp", alt: "Innova" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

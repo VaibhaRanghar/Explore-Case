@@ -24,25 +24,44 @@ export default function Footer() {
             <h4 className="text-white text-sm font-semibold mb-4">
               Useful Links:
             </h4>
-            <ul className="space-y-2 text-sm">
-              <li>
+
+            <ul className="space-y-2 text-sm grid grid-cols-2 grid-rows-0 gap-2">
+              <li className="self-end">
                 <Link href="/" className="hover:text-white">
                   Home
                 </Link>
               </li>
-              <li>
+              <li className="col-start-1 row-start-2">
                 <Link href="/services" className="hover:text-white">
                   Services
                 </Link>
               </li>
-              <li>
+              <li className="col-start-1 row-start-3">
                 <Link href="/about" className="hover:text-white">
                   About Us
                 </Link>
               </li>
-              <li>
+              <li className="col-start-1 row-start-4">
                 <Link href="/contact" className="hover:text-white">
                   Contact
+                </Link>
+              </li>
+              <li className="col-start-2 row-start-1">
+                <Link href="/privacy" className="hover:text-white">
+                  Policies
+                </Link>
+              </li>
+              <li className="col-start-2 row-start-2">
+                <Link
+                  href="/privacy/terms&conditions"
+                  className="hover:text-white"
+                >
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li className="col-start-2 row-start-3">
+                <Link href="/privacy/refund" className="hover:text-white">
+                  Refund
                 </Link>
               </li>
             </ul>

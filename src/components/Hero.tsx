@@ -34,7 +34,7 @@ export default function Hero() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.1, duration: 0.8 }}
       >
-        <motion.h1
+        <motion.h2
           className="text-5xl md:text-7xl font-bold mb-6"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -49,7 +49,7 @@ export default function Hero() {
           >
             Adventure
           </motion.span>
-        </motion.h1>
+        </motion.h2>
         <motion.p
           className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-gray-200"
           initial={{ y: 20, opacity: 0 }}

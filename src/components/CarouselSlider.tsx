@@ -1,24 +1,7 @@
 "use client";
 import Marquee from "react-fast-marquee";
-// import {
-//   Carousel,
-//   CarouselContent,
-//   CarouselItem,
-//   CarouselNext,
-//   CarouselPrevious,
-// } from "@/components/ui/carousel";
-import SliderItem from "./SliderItem";
 
-// const data = [
-//   {
-//     images: "/bookNow.svg",
-//     name: "Location Name",
-//     nights: "3",
-//     days: "4",
-//     discountedPrice: "15,000",
-//     price: "48,500",
-//   },
-// ];
+import SliderItem from "./SliderItem";
 
 const datax = [
   { images: "/slider/kedarnath.webp", name: "Kedarnath" },
@@ -35,43 +18,6 @@ const datax = [
 
   { images: "/slider/rishikesh.webp", name: "Haridwar & Rishikesh" },
 ];
-// function CarouselSlider() {
-//   return (
-//     <div>
-//       <center>
-//         <h1 className="text-3xl font-bold mb-4">
-//           Our Uttarakhand Tour Packages
-//         </h1>
-//       </center>
-
-//       <div className="w-4/5 mx-auto ">
-//         <Carousel className="p-10" aria-activedescendant="">
-//           <CarouselPrevious />
-//           <CarouselContent className="-ml-4 ">
-//             {data.map((item, index) => (
-//               <CarouselItem
-//                 key={index}
-//                 className="pl-4 sm:basis-1 md:basis-1/3 lg:basis-1/4"
-//               >
-//                 <div>
-//                   <SliderItem
-//                     images={item.images}
-//                     nights={item.nights}
-//                     name={item.name}
-//                     days={item.days}
-//                     price={item.price}
-//                     discountedPrice={item.discountedPrice}
-//                   />
-//                 </div>
-//               </CarouselItem>
-//             ))}
-//           </CarouselContent>
-//           <CarouselNext />
-//         </Carousel>
-//       </div>
-//     </div>
-//   );
-// }
 
 function CarouselSlider() {
   return (

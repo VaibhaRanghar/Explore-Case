@@ -88,7 +88,11 @@ export default function Testimonials() {
     return () => window.removeEventListener("resize", updateItemsPerView);
   }, []);
   return (
-    <section className="py-20 bg-emerald-50">
+    <section
+      className="py-20 bg-emerald-50"
+      aria-roledescription="carousel"
+      aria-label="Testimonials"
+    >
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">What Our Travelers Say</h2>
@@ -99,6 +103,7 @@ export default function Testimonials() {
         <div className="carousal w-full relative ">
           <Link
             href={`#slide${curr == 0 ? curr : curr - 1}`}
+            aria-label="Previous testimonial"
             scroll={false}
             onClick={() => setCurr((prev) => (prev == 0 ? prev : prev - 1))}
             className="btn btn-circle btn-sm  btn-success fill-white absolute z-50 -left-2 lg:-left-5 top-1/2 opacity-70"
@@ -109,7 +114,7 @@ export default function Testimonials() {
           </Link>
           <div className="content-center carousel-start overflow-hidden">
             <div
-              className="carousel-track gap-2 md:gap-5 flex transition-transform duration-500 ease-in-out "
+              className="carousel-track gap-2 md:gap-5 flex transition-transform duration-500 ease-out "
               style={{
                 transform: `translateX(-${
                   (curr * 100 + curr * 3) / itemsPerView
@@ -120,6 +125,11 @@ export default function Testimonials() {
                 <Card
                   key={index}
                   id={"slide" + index}
+                  aria-roledescription="slide"
+                  aria-label={`Testimonial ${index + 1} of ${
+                    testimonials.length
+                  }`}
+                  aria-current={curr === index}
                   className="carousel-item relative w-full md:w-1/2 lg:w-1/3 bg-white"
                 >
                   <CardContent className="p-6 flex justify-between flex-col h-full">
@@ -131,7 +141,8 @@ export default function Testimonials() {
                         ) : readMore[index]?.show ? (
                           <>
                             {testimonial.text}{" "}
-                            <span
+                            <button
+                              aria-label={`Show less about testimonial from ${testimonial.name}`}
                               className="text-blue-500 cursor-pointer"
                               onClick={() =>
                                 setReadMore((prev) =>
@@ -144,12 +155,14 @@ export default function Testimonials() {
                               }
                             >
                               Show less
-                            </span>
+                            </button>
                           </>
                         ) : (
                           <>
                             {testimonial.text.slice(0, 300)}...
-                            <span
+                            <button
+                              aria-label={`Show more about testimonial from ${testimonial.name}`}
+                              aria-expanded={readMore[index]?.show}
                               className="text-blue-500 cursor-pointer"
                               onClick={() =>
                                 setReadMore((prev) =>
@@ -162,7 +175,7 @@ export default function Testimonials() {
                               }
                             >
                               Read more
-                            </span>
+                            </button>
                           </>
                         )}
                       </p>
@@ -207,6 +220,7 @@ export default function Testimonials() {
           </div>
           <Link
             href={`#slide${curr == testimonials.length - 1 ? 0 : curr + 1}`}
+            aria-label="Next testimonial"
             scroll={false}
             onClick={() =>
               setCurr((prev) =>

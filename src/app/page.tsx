@@ -4,7 +4,6 @@ import Navbar from "@/components/NavBar";
 import ShortAbout from "@/components/ShortAbout";
 import Testimonials from "@/components/Testimonials";
 import VehicleShowcase from "@/components/VehicleShowcase";
-
 import WhyChooseUs from "@/components/WhyUs";
 
 export default function Home() {

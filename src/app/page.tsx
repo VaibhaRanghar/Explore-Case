@@ -1,4 +1,5 @@
-import Adventures from "@/components/Adventures";
+// import Adventures from "@/components/Adventures";
+import AdventureTourDesigns from "@/components/AdventureTourDesigns";
 import CarouselSlider from "@/components/CarouselSlider";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/NavBar";
@@ -27,7 +28,7 @@ export default function Home() {
       <ShortAbout />
       <CarouselSlider />
       <WhyChooseUs />
-      <Adventures />
+      <AdventureTourDesigns />
       <VehicleShowcase />
       <Testimonials />
     </div>

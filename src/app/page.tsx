@@ -1,3 +1,4 @@
+import Adventures from "@/components/Adventures";
 import CarouselSlider from "@/components/CarouselSlider";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/NavBar";
@@ -14,6 +15,7 @@ export default function Home() {
       <ShortAbout />
       <CarouselSlider />
       <WhyChooseUs />
+      <Adventures />
       <VehicleShowcase />
       <Testimonials />
     </div>

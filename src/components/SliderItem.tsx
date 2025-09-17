@@ -12,7 +12,7 @@ function SliderItem({ images, name }: { images: string; name: string }) {
         alt={name}
         width={200}
         height={200}
-        className="w-full h-1/2 object-cover"
+        className="w-80 h-36 object-cover"
       />
       <div className="flex flex-col items-center p-4 gap-5">
         <h2 className="text-lg">{name}</h2>

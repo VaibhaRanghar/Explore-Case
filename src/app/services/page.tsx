@@ -3,16 +3,12 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Compass, Briefcase, Car, Plane, Check } from "lucide-react";
-import hotel from "../../../public/pexels-andrew-3201763.jpg";
-import charDham from "../../../public/charDham.webp";
-import car from "../../../public/haridwar-taxi.png";
-import helicopter from "../../../public/helicopter.webp";
 
 const services = [
   {
     title: "Char Dham Tour Packages",
     icon: Compass,
-    image: charDham,
+    image: "/charDham.webp",
     alt: "Temple",
     points: [
       "Hassle-free premium Char Dham Yatra services.",
@@ -23,7 +19,7 @@ const services = [
   {
     title: "Hotel & Accommodation Booking",
     icon: Briefcase,
-    image: hotel,
+    image: "/pexels-andrew-3201763.jpg",
     alt: "Hotel Room",
     points: [
       "Premium accommodations",
@@ -34,7 +30,7 @@ const services = [
   {
     title: "Cab & Transportation Services",
     icon: Car,
-    image: car,
+    image: "/taxi.jpeg",
     alt: "Cab",
     points: [
       "Reliable cab services for seamless travel.",
@@ -45,7 +41,7 @@ const services = [
   {
     title: "Helicopter Service",
     icon: Plane,
-    image: helicopter,
+    image: "/helicopter.webp",
     alt: "Helicopter",
     points: [
       "Unparalleled aerial views and fast access to remote locations.",
@@ -103,7 +99,7 @@ export default function ServicesPage() {
               }`}
             >
               <Image
-                src={service.image || hotel}
+                src={service.image}
                 alt={service.alt}
                 fill
                 className="object-cover rounded-lg  shadow-lg shadow-slate-600 "

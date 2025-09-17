@@ -2,20 +2,27 @@ import React from "react";
 
 function ShortAbout() {
   return (
-    <div className="py-10 ">
-      <center>
-        <h1 className="text-3xl font-bold p-5 ">
-          Best Char Dham Yatra Packages - Book with Explore Case Now
-        </h1>
-        <div className="text-gray-600 text-justify mx-auto px-3 lg:px-36 py-5 ">
-          At Explore Case, we specialize in crafting customized Char Dham
-          packages that cater to individual, family, and group travel needs. We
-          take care of all your travel requirements, including premium hotel
-          bookings, reliable transportation, and helicopter bookings for
-          Kedarnath, ensuring you get the most convenient and luxurious
-          experience. Whether you want to reach Kedarnath via helicopter Yatra
-          services or explore the Char Dham Yatra by road, we provide both
-          options to suit your preference.
+    <section className="py-10" aria-labelledby="shortabout-title">
+      <main className="flex flex-col items-center">
+        <header>
+          <h1
+            id="shortabout-title"
+            className="text-3xl font-bold p-5 text-center"
+          >
+            Char Dham Yatra & Holiday Packages | Explore Case
+          </h1>
+        </header>
+        <article className="text-gray-600 text-justify mx-auto px-3 lg:px-36 py-5 max-w-7xl">
+          <p>
+            At Explore Case, we specialize in crafting customized Char Dham
+            packages that cater to individual, family, and group travel needs.
+            We take care of all your travel requirements, including premium
+            hotel bookings, reliable transportation, and helicopter bookings for
+            Kedarnath, ensuring you get the most convenient and luxurious
+            experience. Whether you want to reach Kedarnath via helicopter Yatra
+            services or explore the Char Dham Yatra by road, we provide both
+            options to suit your preference.
+          </p>
           <p>
             Our services are designed to make your Char Dham Yatra 2025 seamless
             and spiritually enriching.
@@ -48,9 +55,9 @@ function ShortAbout() {
             every detail is planned with care to provide a peaceful, sacred, and
             rejuvenating journey.
           </p>
-        </div>
-      </center>
-    </div>
+        </article>
+      </main>
+    </section>
   );
 }
 

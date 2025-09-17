@@ -33,9 +33,9 @@ export const metadata: Metadata = {
       type: "image/png",
     },
   ],
-  title: "Explore Case | Char Dham, Domestic & International Tour Packages",
+  title: "Char Dham Yatra & Holiday Packages | Explore Case",
   description:
-    "Book Char Dham Yatra, domestic & international tour packages with Explore Case. Affordable travel deals, hotels, cab services & complete trip planning",
+    "Book Char Dham Yatra, domestic & international holiday packages with Explore Case. Hotels, cab services & customized tours for families & groups",
 };
 
 export default function RootLayout({

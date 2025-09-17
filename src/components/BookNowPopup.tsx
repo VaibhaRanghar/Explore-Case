@@ -10,6 +10,7 @@ import {
 import Image from "next/image";
 import travel from "../../public/bookNow.svg";
 import { Toaster } from "react-hot-toast";
+import Link from "next/link";
 
 interface BookNowPopupProps {
   isOpen: boolean;
@@ -39,20 +40,20 @@ export default function BookNowPopup({ isOpen, onClose }: BookNowPopupProps) {
             <div className="w-full flex items-center justify-center">
               <Button className="w-full flex items-center justify-center">
                 <Mail className="mr-2" size={20} />
-                <a
+                <Link
                   href="mailto:info@explorecase.in"
                   target="_blank"
                   className="md:hidden"
                 >
                   Email Us at info@explorecase.in
-                </a>{" "}
-                <a
+                </Link>{" "}
+                <Link
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=info@explorecase.in"
                   target="_blank"
                   className="hidden md:inline"
                 >
                   Email Us at info@explorecase.in
-                </a>
+                </Link>
               </Button>
             </div>
           </div>

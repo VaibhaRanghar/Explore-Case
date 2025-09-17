@@ -52,10 +52,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="col-start-2 row-start-2">
-                <Link
-                  href="/privacy/terms&conditions"
-                  className="hover:text-white"
-                >
+                <Link href="/privacy/terms" className="hover:text-white">
                   Terms & Conditions
                 </Link>
               </li>

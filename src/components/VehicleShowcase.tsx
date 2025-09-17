@@ -8,7 +8,7 @@ const VehicleShowcase = () => {
   // Sample car images - replace with your actual images
   const slides = [
     { id: 1, src: "/cars/car1.jpg", alt: "Maruti Ertiga" },
-    { id: 2, src: "/cars/car2.jpg", alt: "Swift" },
+    { id: 2, src: "/cars/swift.jpg", alt: "Swift" },
     { id: 3, src: "/cars/car3.jpg", alt: "Traveller" },
     { id: 4, src: "/cars/car4.webp", alt: "Innova" },
   ];

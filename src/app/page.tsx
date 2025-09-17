@@ -14,8 +14,8 @@ export default function Home() {
       <ShortAbout />
       <CarouselSlider />
       <WhyChooseUs />
-      <Testimonials />
       <VehicleShowcase />
+      <Testimonials />
     </div>
   );
 }

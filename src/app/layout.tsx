@@ -5,7 +5,6 @@ import Navbar from "@/components/NavBar";
 import WhatsAppButton from "@/components/WhatsappBtn";
 import Footer from "@/components/footer";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -34,9 +33,9 @@ export const metadata: Metadata = {
       type: "image/png",
     },
   ],
-  title: "Explore Case",
+  title: "Explore Case | Char Dham, Domestic & International Tour Packages",
   description:
-    "Explore Case is a trusted travel agency offering India & International tour packages, Char Dham Yatra, adventure trips, hotels & transport. Book your journey today",
+    "Book Char Dham Yatra, domestic & international tour packages with Explore Case. Affordable travel deals, hotels, cab services & complete trip planning",
 };
 
 export default function RootLayout({

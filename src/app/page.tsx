@@ -14,6 +14,10 @@ export default function Home() {
       <Head>
         <title>Char Dham Yatra & Holiday Packages | Explore Case</title>
         <meta
+          name="title"
+          content="Char Dham Yatra & Holiday Packages | Explore Case"
+        />
+        <meta
           name="description"
           content="Book Char Dham Yatra, domestic & international holiday packages with Explore Case. Hotels, cab services & customized tours for families & groups."
         />

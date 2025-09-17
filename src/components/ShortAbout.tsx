@@ -14,6 +14,11 @@ function ShortAbout() {
         </header>
         <article className="text-gray-600 text-justify mx-auto px-3 lg:px-36 py-5 max-w-7xl">
           <p>
+            Book Char Dham Yatra, domestic & international holiday packages with
+            Explore Case. Hotels, cab services & customized tours for families &
+            groups.
+          </p>
+          <p>
             At Explore Case, we specialize in crafting customized Char Dham
             packages that cater to individual, family, and group travel needs.
             We take care of all your travel requirements, including premium

@@ -153,7 +153,6 @@ const VehicleShowcase = () => {
           if (e.key === "ArrowLeft") prevSlide();
           if (e.key === "ArrowRight") nextSlide();
         }}
-        autoFocus
       />
     </div>
   );

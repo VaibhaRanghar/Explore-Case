@@ -1,6 +1,12 @@
 "use client";
-import React, { useState } from "react";
-import { ChevronLeft, ChevronRight, MapPin, Clock } from "lucide-react";
+import React from "react";
+import {
+  // ChevronLeft,
+  // ChevronRight,
+  // MapPin,
+  // Clock,
+  ArrowRight,
+} from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -35,109 +41,72 @@ const datax = [
     description:
       "The Valley of Flowers National Park, a UNESCO World Heritage Site, is one of the most stunning treks in India. Nestled in the Chamoli district of Uttarakhand, this breathtaking valley is famous for its endless meadows of alpine flowers, snow-clad peaks, and rare Himalayan wildlife. Located at an altitude of 3,658 meters, the valley is open only during the monsoon season (July to September), when thousands of colorful flowers bloom, making it a true paradise for nature lovers, photographers, and trekkers.",
   },
+  {
+    images: "/adventures/jim corbett.webp",
+    name: "Jim Corbett National Park Safari",
+    description:
+      "Jim Corbett National Park Safari Experience the thrill of exploring India's oldest national park, famous for its Royal Bengal Tigers, elephants, and rich wildlife. A perfect getaway for nature and adventure lovers, offering jeep safaris, bird watching, and serene forest stays.",
+  },
 ];
 
 const AdventureTourDesigns = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
   const router = useRouter();
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % datax.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + datax.length) % datax.length);
-  };
-
   return (
-    <div className="min-h-screen bg-gray-100">
-      <section className="py-16 px-4 bg-emerald-900 text-white">
+    <div className=" bg-gray-100">
+      <section className="py-16 px-4 bg-gradient-to-br from-emerald-50 to-emerald-100">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Epic Adventure Awaits</h2>
-            <p className="text-emerald-200 text-lg max-w-2xl mx-auto">
-              Journey through the most spectacular landscapes and create
-              memories that last a lifetime
+            <h2 className="text-4xl font-bold text-emerald-800 mb-4">
+              Popular Adventure Tours
+            </h2>
+            <p className="text-emerald-600 text-lg max-w-2xl mx-auto">
+              Discover breathtaking adventures and create unforgettable memories
+              with our curated collection of tours
             </p>
           </div>
 
-          <div className="relative">
-            <div className="overflow-hidden rounded-3xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {datax.map((tour, index) => (
               <div
-                className="flex transition-transform duration-500 ease-out"
-                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                key={index}
+                className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
               >
-                {datax.map((tour, index) => (
-                  <div key={index} className="w-full flex-shrink-0">
-                    <div className="relative h-96 md:h-[500px]">
-                      <Image
-                        src={tour.images}
-                        alt={tour.name}
-                        width={1000}
-                        height={1000}
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/80 via-emerald-800/60 to-transparent"></div>
-
-                      <div className="absolute inset-0 flex items-center">
-                        <div className="max-w-2xl mx-8 md:mx-16">
-                          <h3 className="text-3xl md:text-5xl font-bold mb-4">
-                            {tour.name}
-                          </h3>
-                          <p className="text-emerald-100 text-lg mb-8 leading-relaxed">
-                            {tour.description.substring(0, 200)}...
-                          </p>
-
-                          <div className="flex flex-wrap gap-4 mb-8">
-                            <span className="bg-emerald-500/20 backdrop-blur-sm border border-emerald-400 text-emerald-100 px-4 py-2 rounded-full">
-                              <MapPin className="w-4 h-4 inline mr-2" />
-                              Uttarakhand
-                            </span>
-                            <span className="bg-emerald-500/20 backdrop-blur-sm border border-emerald-400 text-emerald-100 px-4 py-2 rounded-full">
-                              <Clock className="w-4 h-4 inline mr-2" />
-                              3-7 Days
-                            </span>
-                          </div>
-
-                          <button
-                            className="bg-emerald-500 hover:bg-emerald-400 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105"
-                            onClick={() => router.push("/contact")}
-                          >
-                            Book Adventure
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+                <div className="relative overflow-hidden">
+                  <Image
+                    src={tour.images}
+                    alt={tour.name}
+                    width={1000}
+                    height={1000}
+                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute top-4 right-4">
+                    <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      Popular
+                    </span>
                   </div>
-                ))}
+                </div>
+
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-emerald-800 mb-3 group-hover:text-emerald-600 transition-colors">
+                    {tour.name}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                    {tour.description}
+                  </p>
+
+                  <div className="flex items-center justify-between">
+                    <button
+                      className="bg-emerald-500 text-white px-4 py-2 rounded-lg hover:bg-emerald-600 transition-colors duration-300 flex items-center"
+                      onClick={() => router.push("/contact")}
+                    >
+                      Book Now
+                      <ArrowRight className="w-4 h-4 ml-1" />
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
-
-            <button
-              onClick={prevSlide}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-emerald-300/80 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-all"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-
-            <button
-              onClick={nextSlide}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-emerald-300/80 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-all"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
-
-            <div className="flex justify-center mt-8 space-x-2">
-              {datax.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-all ${
-                    index === currentSlide ? "bg-emerald-400" : "bg-white/30"
-                  }`}
-                />
-              ))}
-            </div>
+            ))}
           </div>
         </div>
       </section>

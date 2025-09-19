@@ -42,10 +42,10 @@ const datax = [
   },
   {
     id: 6,
-    images: "/adventures/heli.jpg",
-    name: "Char Dham Yatra by Helicopter",
+    images: "/adventures/harshil.webp",
+    name: "Harshil Tour",
     description:
-      "Experience the sacred Char Dham Yatra in the most comfortable and time-saving way - by helicopter. This package is designed for devotees who wish to complete the Char Dham pilgrimage (Yamunotri, Gangotri, Kedarnath, and Badrinath) with ease, luxury, and personalized services. With helicopter services from Dehradun, Explore Case ensures a safe, quick, and spiritually fulfilling journey to the holy shrines.",
+      "Escape to the hidden valley of Harsil, surrounded by apple orchards and Himalayan peaks. Explore Case offers curated stays, treks, and riverside bliss.",
   },
 ];
 

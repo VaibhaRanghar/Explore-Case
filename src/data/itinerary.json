@@ -338,5 +338,147 @@
       "Safari zone/route allotted by Forest Department cannot be changed",
       "No smoking, drinking, or littering inside the park"
     ]
+  },
+  {
+    "id": 5,
+    "tourName": "Chopta Tungnath Tour | Chopta Chandrashila",
+    "about": "Explore Case specializes in customized Chopta tour packages for travelers seeking the “Mini Switzerland of Uttarakhand.” Nestled in the Garhwal Himalayas, Chopta is the starting point for the famous Tungnath and Chandrashila trek, known for breathtaking sunrises and panoramic views of Nanda Devi, Trishul, and Chaukhamba peaks. Our packages include comfortable camping, guided trekking, cab services, and local experiences so you can enjoy Chopta’s serene meadows and pristine landscapes. At Explore Case, we blend adventure with comfort, making your Chopta journey a perfect mix of spirituality, thrill, and nature's charm.",
+    "images": [
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+    ],
+    "heroImage": "/adventures/tents and camp.jpg",
+    "duration": "3 Days / 2 Nights",
+    "startPoint": "",
+    "endPoint": "",
+    "itinerary": [
+      {
+        "day": "Day 1",
+        "title": "Arrival & Check-in",
+        "activities": [
+          "Arrive at Chopta, often called the Mini Switzerland of Uttarakhand.",
+          "Check into your scenic campsite surrounded by lush meadows and breathtaking Himalayan landscapes.",
+          "Spend the evening relaxing in the refreshing mountain air.",
+          "Enjoy a hearty dinner and an overnight stay at the camp."
+        ]
+      },
+      {
+        "day": "Day 2",
+        "title": "Tungnath Temple & Chandrashila Trek",
+        "activities": [
+          "Begin an early morning trek to Tungnath Temple, the highest Shiva temple in the world, and continue towards Chandrashila Peak.",
+          "The 4-hour journey takes you through enchanting forests and meadows.",
+          "From the summit, witness a spectacular 360-degree view of the Himalayas, including Nanda Devi, Trishul, and Chaukhamba peaks.",
+          "Trek back to Chopta by evening, followed by dinner and a peaceful overnight stay at the camp."
+        ]
+      },
+      {
+        "day": "Day 3",
+        "title": "Departure from Chopta",
+        "activities": [
+          "After breakfast, bid farewell to Chopta.",
+          "Begin your return journey with unforgettable memories of this spiritual and adventurous Himalayan experience."
+        ]
+      }
+    ],
+    "inclusions": [
+      "Accommodation on a sharing basis in scenic camps.",
+      "Meals: Breakfast, Dinner, and evening tea.",
+      "Trek to Tungnath Temple and Chandrashila Summit with guided support."
+    ],
+    "exclusions": [
+      "Any transport services to/from Chopta.",
+      "International or domestic air and rail tickets.",
+      "Meals or drinks not mentioned in the itinerary.",
+      "Expenses such as laundry, porter, tips, camera fees, ropeway charges, or entrance fees.",
+      "Travel or medical insurance and any costs incurred due to bad weather, road closures, landslides, or other unforeseen circumstances.",
+      "Any increase in government taxes.",
+      "Any service not specifically mentioned in the inclusions."
+    ],
+    "termsAndConditions": [
+      "Booking confirmed on advance payment and full payment required before trek.",
+      "Cancellation Policy: Before 15 days = 80% refund, Within 15 days = 50% refund whereas no-shows = no refund.",
+      "Itinerary may change due to weather, road closures, landslides, or unforeseen events.",
+      "Participants must be physically fit and inform company of medical conditions.",
+      "Travel/medical insurance is recommended.",
+      "Accommodation is on sharing basis; meals include Breakfast & Dinner with evening tea.",
+      "Company is not liable for loss, accident, or injury; participants responsible for personal belongings.",
+      "Additional expenses (tips, laundry, camera fees, entrance charges) are borne by participants.",
+      "Any increase in government taxes or fees will be added to package cost.",
+      "Force majeure: Natural calamities, strikes, or unforeseen events may lead to itinerary changes; no compensation is payable."
+    ]
+  },
+  {
+    "id": 6,
+    "tourName": "Harshil Tour",
+    "about": "At Explore Case, we bring you the untouched beauty of Harsil – the hidden gem of Uttarakhand. Surrounded by apple orchards, snow-clad peaks, and the gushing Bhagirathi River, our Harsil tour packages are designed for nature lovers, adventure seekers, and those looking for peace away from crowded tourist spots. From scenic treks to nearby villages, riverside stays, and soulful Himalayan experiences, we provide curated itineraries, comfortable stays, and smooth transportation. With our expertise in Uttarakhand tourism, Explore Case ensures your Harsil trip is memorable, authentic, and hassle-free.",
+    "images": [
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+    ],
+    "heroImage": "/adventures/harshil.webp",
+    "duration": "3 Days / 2 Nights",
+    "startPoint": "",
+    "endPoint": "",
+    "itinerary": [
+      {
+        "day": "Day 1",
+        "title": "Check-in at Hotel",
+        "activities": [
+          "Welcome drink on arrival at the hotel in Uttarkashi.",
+          "Enjoy lunch after check-in formalities.",
+          "Guided tour to Mukhwa (winter home of Goddess Gangotri) and Bagori Village (traditional sheep herders’ village).",
+          "Evening relaxation with hot tea/coffee.",
+          "Dinner and overnight stay at the hotel."
+        ]
+      },
+      {
+        "day": "Day 2",
+        "title": "Sattal & Nelang Valley Excursion",
+        "activities": [
+          "Breakfast at the hotel.",
+          "Moderate 2 km hike to Sattal, enjoying Himalayan landscapes.",
+          "Visit Nelang Valley, known for its Tibet & Spiti-like terrain.",
+          "Return to hotel by evening for dinner and overnight stay."
+        ]
+      },
+      {
+        "day": "Day 3",
+        "title": "Departure",
+        "activities": [
+          "Early morning sunrise view from the lake.",
+          "Breakfast at the hotel.",
+          "Departure to onward destination with memorable experiences."
+        ]
+      }
+    ],
+    "inclusions": [
+      "Accommodation on twin/triple sharing basis",
+      "Meals: Breakfast & Dinner (with evening tea)",
+      "Guided tour to the village",
+      "Trek to Sattal Lake",
+      "Permit to Nelang Valley"
+    ],
+    "exclusions": [
+      "GST (5%)",
+      "Any transport services",
+      "Any international or domestic air/rail tickets",
+      "Meals or drinks not mentioned in the itinerary",
+      "Expenses on: Laundry, Porter services, Tips, Camera fee, Ropeway charges, Entrance fees",
+      "Any kind of travel or medical insurance",
+      "Expenses due to natural calamities (bad weather, road closures, landslides, etc.)",
+      "Any increase in government taxes",
+      "Any service not specified in the 'Inclusions' section"
+    ],
+    "termsAndConditions": [
+      "Full payment must be made in advance to confirm your spot.",
+      "Cancellation Policy: Berfore 30 Days = 75% refund, Between 15 and 30 Days = 50% refund, Less than 15 Days = no refund",
+      "The itinerary is subject to change due to weather, road conditions, or unforeseen events. No refunds will be provided for such changes.",
+      "Participants must be physically fit for the trip. Medical conditions must be disclosed in advance.",
+      "Organizers are not responsible for any loss, injury, accident, or delays caused by natural or external factors.",
+      "Respect fellow travelers, locals, and the environment. Disruptive behavior may lead to removal from the trip without refund."
+    ]
   }
 ]

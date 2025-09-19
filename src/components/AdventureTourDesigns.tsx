@@ -1,51 +1,51 @@
 "use client";
 import React from "react";
-import {
-  // ChevronLeft,
-  // ChevronRight,
-  // MapPin,
-  // Clock,
-  ArrowRight,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 const datax = [
   {
+    id: 1,
     images: "/adventures/auli.jpg",
     name: "Auli Skiing & Cable Car Tour",
     description:
       "Auli, located in Chamoli district of Uttarakhand, is a paradise for snow lovers and adventure seekers. Known as the Skiing Capital of India, it offers world-class skiing slopes, panoramic views of the Nanda Devi and Himalayan ranges, and the famous Auli Ropeway (cable car) - one of Asia's longest cable cars. With Explore Case, you can enjoy skiing, cable car rides, and breathtaking snow adventures in a safe and exciting way",
   },
   {
-    images: "/adventures/heli.jpg",
-    name: "Char Dham Yatra by Helicopter",
-    description:
-      "Experience the sacred Char Dham Yatra in the most comfortable and time-saving way - by helicopter. This package is designed for devotees who wish to complete the Char Dham pilgrimage (Yamunotri, Gangotri, Kedarnath, and Badrinath) with ease, luxury, and personalized services. With helicopter services from Dehradun, Explore Case ensures a safe, quick, and spiritually fulfilling journey to the holy shrines.",
-  },
-  {
-    images: "/adventures/rafting.jpg",
-    name: "Rafting Adventure in Rishikesh",
-    description:
-      "Rishikesh, the Yoga Capital of the World, is also India's most popular destination for river rafting and adventure sports. Situated on the banks of the holy Ganga, it offers thrilling rafting rapids, scenic views of the Himalayas, and a blend of spirituality with adventure. At Explore Case, we provide safe and exciting Rishikesh rafting packages with certified guides, modern equipment, and flexible routes to suit beginners as well as adventure seekers.",
-  },
-  {
-    images: "/adventures/tents and camp.jpg",
-    name: "Thrilling treks with camp tents",
-    description:
-      "There's no better way to connect with nature than trekking through the Himalayas and spending the night under the stars in cozy camping tents. With Explore Case, we bring you thrilling trekking experiences combined with safe camping stays at scenic spots across Uttarakhand and Himachal. Our trekking & camping packages are perfect for adventure enthusiasts, nature lovers, students, families, and groups who want a blend of adventure and peace.",
-  },
-  {
+    id: 2,
     images: "/adventures/Valley-of-Flowers.webp",
     name: "Valley of Flowers Trek",
     description:
       "The Valley of Flowers National Park, a UNESCO World Heritage Site, is one of the most stunning treks in India. Nestled in the Chamoli district of Uttarakhand, this breathtaking valley is famous for its endless meadows of alpine flowers, snow-clad peaks, and rare Himalayan wildlife. Located at an altitude of 3,658 meters, the valley is open only during the monsoon season (July to September), when thousands of colorful flowers bloom, making it a true paradise for nature lovers, photographers, and trekkers.",
   },
   {
+    id: 3,
+    images: "/adventures/rafting.jpg",
+    name: "Rishikesh River Rafting & Bungee Jumping Package",
+    description:
+      "Rishikesh, the Yoga Capital of the World, is also India's most popular destination for river rafting and adventure sports. Situated on the banks of the holy Ganga, it offers thrilling rafting rapids, scenic views of the Himalayas, and a blend of spirituality with adventure. At Explore Case, we provide safe and exciting Rishikesh rafting packages with certified guides, modern equipment, and flexible routes to suit beginners as well as adventure seekers.",
+  },
+  {
+    id: 4,
     images: "/adventures/jim corbett.webp",
     name: "Jim Corbett National Park Safari",
     description:
       "Jim Corbett National Park Safari Experience the thrill of exploring India's oldest national park, famous for its Royal Bengal Tigers, elephants, and rich wildlife. A perfect getaway for nature and adventure lovers, offering jeep safaris, bird watching, and serene forest stays.",
+  },
+  {
+    id: 5,
+    images: "/adventures/tents and camp.jpg",
+    name: "Chopta Tungnath Tour | Chopta Chandrashila",
+    description:
+      "There's no better way to connect with nature than trekking through the Himalayas and spending the night under the stars in cozy camping tents. With Explore Case, we bring you thrilling trekking experiences combined with safe camping stays at scenic spots across Uttarakhand and Himachal. Our trekking & camping packages are perfect for adventure enthusiasts, nature lovers, students, families, and groups who want a blend of adventure and peace.",
+  },
+  {
+    id: 6,
+    images: "/adventures/heli.jpg",
+    name: "Char Dham Yatra by Helicopter",
+    description:
+      "Experience the sacred Char Dham Yatra in the most comfortable and time-saving way - by helicopter. This package is designed for devotees who wish to complete the Char Dham pilgrimage (Yamunotri, Gangotri, Kedarnath, and Badrinath) with ease, luxury, and personalized services. With helicopter services from Dehradun, Explore Case ensures a safe, quick, and spiritually fulfilling journey to the holy shrines.",
   },
 ];
 
@@ -98,9 +98,9 @@ const AdventureTourDesigns = () => {
                   <div className="flex items-center justify-between">
                     <button
                       className="bg-emerald-500 text-white px-4 py-2 rounded-lg hover:bg-emerald-600 transition-colors duration-300 flex items-center"
-                      onClick={() => router.push("/contact")}
+                      onClick={() => router.push(`/itinerary/${tour.id}`)}
                     >
-                      Book Now
+                      View Details
                       <ArrowRight className="w-4 h-4 ml-1" />
                     </button>
                   </div>

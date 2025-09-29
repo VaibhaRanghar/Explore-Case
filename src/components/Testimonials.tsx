@@ -64,14 +64,12 @@ export default function Testimonials() {
   const [readMore, setReadMore] = useState<{ index: number; show: boolean }[]>(
     testimonials.map((item, index) => ({ index, show: false }))
   );
-  const [itemsPerView, setItemsPerView] = useState(3); //
-
-  const [indices] = useState(testimonials.map((item, index) => index));
+  const [itemsPerView, setItemsPerView] = useState(3); 
   const [curr, setCurr] = useState<number>(0);
   const stars = Array(5).fill(0);
 
   useEffect(() => {
-    setCurr(indices[0]);
+    setCurr(0);
 
     const updateItemsPerView = () => {
       const width = window.innerWidth;

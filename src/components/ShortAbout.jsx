@@ -17,7 +17,7 @@ function ShortAbout() {
       const timeout = setTimeout(() => {
         setTypedText((prev) => prev + fullText[currentIndex]);
         setCurrentIndex((prev) => prev + 1);
-      }, 80);
+      }, 50);
       return () => clearTimeout(timeout);
     }
   }, [currentIndex, fullText]);
@@ -53,8 +53,8 @@ function ShortAbout() {
       {/* Background Decorations */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-emerald-200/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-emerald-300/15 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-emerald-100/30 rounded-full blur-2xl animate-pulse delay-500"></div>
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-emerald-300/15 rounded-full blur-3xl animate-pulse "></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-emerald-100/30 rounded-full blur-2xl animate-pulse "></div>
       </div>
 
       <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -79,7 +79,7 @@ function ShortAbout() {
 
           <div
             data-animate="subtitle"
-            className={`transition-all duration-1000 delay-300 ${
+            className={`transition-all duration-1000  ${
               isVisible.subtitle
                 ? "opacity-100 transform translate-y-0"
                 : "opacity-0 transform translate-y-8"
@@ -101,7 +101,7 @@ function ShortAbout() {
         <div className="max-w-5xl mx-auto">
           <article
             data-animate="content"
-            className={`transition-all duration-1000 delay-700 ${
+            className={`transition-all duration-1000  ${
               isVisible.content
                 ? "opacity-100 transform translate-y-0"
                 : "opacity-0 transform translate-y-8"
@@ -126,7 +126,7 @@ function ShortAbout() {
               <p className="text-gray-700 leading-relaxed mb-8 text-justify text-lg">
                 Our services are designed to make your{" "}
                 <span className="font-semibold text-emerald-700">
-                  Char Dham Yatra 2025
+                  Char Dham Yatra
                 </span>{" "}
                 seamless and spiritually enriching.
               </p>
@@ -134,7 +134,7 @@ function ShortAbout() {
               {/* Features List */}
               <div
                 data-animate="list"
-                className={`bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-emerald-100 mb-8 transition-all duration-1000 delay-900 ${
+                className={`bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-emerald-100 mb-8 transition-all duration-500  ${
                   isVisible.list
                     ? "opacity-100 transform translate-y-0"
                     : "opacity-0 transform translate-y-8"
@@ -211,14 +211,14 @@ function ShortAbout() {
 
               <div
                 data-animate="closing"
-                className={`bg-gradient-to-r from-emerald-500 to-emerald-600 text-white p-6 rounded-2xl shadow-lg transition-all duration-1000 delay-1100 ${
+                className={`bg-gradient-to-r from-emerald-500 to-emerald-600 text-white p-6 rounded-2xl shadow-lg transition-all duration-1000  ${
                   isVisible.closing
                     ? "opacity-100 transform translate-y-0"
                     : "opacity-0 transform translate-y-8"
                 }`}
               >
                 <p className="text-center text-lg font-medium leading-relaxed">
-                  Join us for the ultimate Char Dham Yatra experience in 2025,
+                  Join us for the ultimate Char Dham Yatra experience,
                   where every detail is planned with care to provide a peaceful,
                   sacred, and rejuvenating journey.
                 </p>
@@ -242,7 +242,7 @@ function ShortAbout() {
         }
 
         .animate-float {
-          animation: float 6s ease-in-out infinite;
+          animation: float 2s ease-in-out infinite;
         }
 
         @keyframes float {

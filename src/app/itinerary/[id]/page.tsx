@@ -12,10 +12,16 @@ import {
   ChevronRight,
   FileText,
   AlertCircle,
+  Phone,
+  MessageCircle,
+  Mail,
+  Wallet,
+  CalendarCheck,
 } from "lucide-react";
 import tourData from "@/data/itinerary.json";
 import { useParams, useRouter } from "next/navigation";
 import ComingSoonPage from "@/components/ComingSoon";
+import Image from "next/image";
 const ToursPage = () => {
   const { id } = useParams();
   const router = useRouter();
@@ -89,9 +95,11 @@ const ToursPage = () => {
         >
           {/* Hero Image Section with Tour Info Overlay */}
           <div className="relative h-[500px] md:h-[600px] rounded-2xl overflow-hidden mb-8 shadow-2xl">
-            <img
+            <Image
               src={currentTour.heroImage}
               alt={currentTour.tourName}
+              width={1000}
+              height={1000}
               className="w-full h-full object-cover transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
@@ -121,7 +129,6 @@ const ToursPage = () => {
               </div>
             </div>
           </div>
-
           {/* Image Carousel Section */}
           <div className="bg-white rounded-2xl shadow-xl mb-8 overflow-hidden">
             <div className="bg-emerald-100 p-6 border-b">
@@ -132,8 +139,10 @@ const ToursPage = () => {
             </div>
             <div className="p-6">
               {/* Main Image Display */}
-              <div className="relative h-80 md:h-96 rounded-xl overflow-hidden mb-4 group">
-                <img
+              <div className="relative h-80 md:h-96 lg:h-fit rounded-xl overflow-hidden mb-4 group">
+                <Image
+                  width={1000}
+                  height={1000}
                   src={currentTour.images[currentImageIndex]}
                   alt={`${currentTour.tourName} - Gallery Image ${
                     currentImageIndex + 1
@@ -173,7 +182,9 @@ const ToursPage = () => {
                         : "border-gray-300 hover:border-emerald-300 opacity-70 hover:opacity-100"
                     }`}
                   >
-                    <img
+                    <Image
+                      width={1000}
+                      height={1000}
                       src={image}
                       alt={`Thumbnail ${index + 1}`}
                       className="w-full h-full object-cover"
@@ -183,46 +194,126 @@ const ToursPage = () => {
               </div>
             </div>
           </div>
-
           {/* About Section with Side Image */}
+
           <div className="bg-white rounded-2xl shadow-xl mb-8 overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-emerald-800 mb-4 flex items-center">
-                  <Mountain className="h-6 w-6 mr-2" />
-                  About This Tour
-                </h3>
-                <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                  {currentTour.about}
-                </p>
-                <div className="bg-emerald-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-emerald-800 mb-2">
-                    Quick Facts
-                  </h4>
-                  <div className="space-y-2 text-sm text-emerald-700">
-                    <div className="flex justify-between">
-                      <span>Duration:</span>
-                      <span className="font-medium">
-                        {currentTour.duration}
-                      </span>
+            {/* Main Flex Container */}
+            <div className="flex flex-col lg:flex-row lg:h-[60rem]">
+              {/* Left Panel: About + Quick Facts + Pricing Card */}
+              <div className="flex-1 flex flex-col p-4 lg:p-8 lg:pr-4">
+                {/* About Section */}
+                <div className="flex-1 flex flex-col justify-between mb-6 lg:mb-0">
+                  <div>
+                    <h3 className="text-2xl font-bold text-emerald-800 mb-4 flex items-center">
+                      <Mountain className="h-6 w-6 mr-2" />
+                      About This Tour
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed text-lg mb-6">
+                      {currentTour.about}
+                    </p>
+                  </div>
+                  <div className="bg-emerald-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-emerald-800 mb-2">
+                      Quick Facts
+                    </h4>
+                    <div className="space-y-2 text-sm text-emerald-700">
+                      <div className="flex justify-between">
+                        <span>Duration:</span>
+                        <span className="font-medium">
+                          {currentTour.duration}
+                        </span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Start Point:</span>
+                        <span className="font-medium">
+                          {currentTour.startPoint.split(" / ")[0]}
+                        </span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Total Days:</span>
+                        <span className="font-medium">
+                          {currentTour.itinerary.length} Days
+                        </span>
+                      </div>
                     </div>
-                    <div className="flex justify-between">
-                      <span>Start Point:</span>
-                      <span className="font-medium">
-                        {currentTour.startPoint.split(" / ")[0]}
-                      </span>
+                  </div>
+                </div>
+
+                {/* Pricing & Support Card */}
+                <div className="mt-6 lg:mt-4">
+                  <div className="bg-emerald-50 rounded-xl border border-emerald-100 shadow-sm overflow-hidden">
+                    {/* Header */}
+                    <div className="flex items-center gap-2 px-4 pt-4">
+                      <Wallet className="text-emerald-600 w-5 h-5" />
+                      <h3 className="text-lg font-bold text-emerald-800">
+                        Price Details
+                      </h3>
                     </div>
-                    <div className="flex justify-between">
-                      <span>Total Days:</span>
-                      <span className="font-medium">
-                        {currentTour.itinerary.length} Days
-                      </span>
+
+                    {/* Price */}
+                    <div className="px-4 py-2">
+                      <p className="text-emerald-900 font-semibold text-xl">
+                        Price:{" "}
+                        <span className="font-bold">{currentTour.price}</span>
+                      </p>
+                    </div>
+
+                    {/* Support Section */}
+                    <div className="px-4 py-3 bg-emerald-100/50">
+                      <p className="text-emerald-700 text-sm font-medium mb-2">
+                        Need help?
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        <button
+                          onClick={() =>
+                            window.open("https://wa.me/8126912729", "_blank")
+                          }
+                          className="flex-1 min-w-[80px] flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-3 rounded-lg transition-all duration-200 hover:shadow-md"
+                        >
+                          <MessageCircle className="w-4 h-4" />
+                          <span className="text-sm font-medium">WhatsApp</span>
+                        </button>
+                        <button
+                          onClick={() =>
+                            window.open("tel:+918126912729", "_blank")
+                          }
+                          className="flex-1 min-w-[80px] flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-3 rounded-lg transition-all duration-200 hover:shadow-md"
+                        >
+                          <Phone className="w-4 h-4" />
+                          <span className="text-sm font-medium">Call</span>
+                        </button>
+                        <button
+                          onClick={() =>
+                            (window.location.href =
+                              "mailto:info@explorecase.in")
+                          }
+                          className="flex-1 min-w-[80px] flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-3 rounded-lg transition-all duration-200 hover:shadow-md"
+                        >
+                          <Mail className="w-4 h-4" />
+                          <span className="text-sm font-medium">Email</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* CTA Button */}
+                    <div className="px-4 py-3">
+                      <button
+                        className="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-[1.02]"
+                        onClick={() => router.push("/booking")}
+                      >
+                        <CalendarCheck className="w-5 h-5" />
+                        Book Online Now
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="relative h-64 lg:h-auto">
-                <img
+
+              {/* Right Panel: Hero Image */}
+              <div className="lg:w-1/2 relative h-64 lg:h-auto">
+                <Image
+                  width={1000}
+                  height={1000}
                   src={currentTour.images[0]}
                   alt={`${currentTour.tourName} landscape`}
                   className="w-full h-full object-cover"
@@ -231,7 +322,6 @@ const ToursPage = () => {
               </div>
             </div>
           </div>
-
           {/* Itinerary with Day Images */}
           <div className="bg-white rounded-2xl shadow-xl mb-8 overflow-hidden">
             <div className="bg-emerald-100 p-6 border-b">
@@ -252,17 +342,7 @@ const ToursPage = () => {
                   >
                     <div className="flex items-center space-x-4">
                       {/* Day Image Thumbnail */}
-                      <div className="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
-                        <img
-                          src={
-                            currentTour.images[
-                              index % currentTour.images.length
-                            ]
-                          }
-                          alt={`Day ${day.day}`}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
+
                       <div className="text-left">
                         <span className="bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                           Day {day.day}
@@ -303,7 +383,6 @@ const ToursPage = () => {
               ))}
             </div>
           </div>
-
           {/* Inclusions and Exclusions */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
             {/* Inclusions */}
@@ -346,7 +425,6 @@ const ToursPage = () => {
               </div>
             </div>
           </div>
-
           {/* Terms and Conditions - Compact Version */}
           <div className="bg-white rounded-2xl shadow-xl mb-8 overflow-hidden">
             <div
@@ -417,11 +495,12 @@ const ToursPage = () => {
               </div>
             </div>
           </div>
-
           {/* Call to Action with Background Image */}
           <div className="relative bg-gradient-to-r from-emerald-600 to-emerald-800 rounded-2xl shadow-xl overflow-hidden">
             <div className="absolute inset-0">
-              <img
+              <Image
+                width={1000}
+                height={1000}
                 src={currentTour.images[currentTour.images.length - 1]}
                 alt="Book your adventure"
                 className="w-full h-full object-cover opacity-20"
@@ -437,9 +516,9 @@ const ToursPage = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button
                   className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-emerald-700 transition-all duration-300 transform hover:scale-105 text-lg"
-                  onClick={() => router.push("/contact")}
+                  onClick={() => router.push("/booking")}
                 >
-                  Contact Us
+                  Book Now
                 </button>
               </div>
             </div>

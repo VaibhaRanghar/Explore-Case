@@ -60,6 +60,16 @@ export default function Navbar() {
               About
             </Link>
             <Link
+              href="/booking"
+              className={` hover:text-emerald-600 ${
+                pathname === "/booking"
+                  ? "text-emerald-600 underline underline-offset-4 decoration-2 "
+                  : ""
+              }`}
+            >
+              Booking
+            </Link>
+            <Link
               href="/contact"
               className={` hover:text-emerald-600 ${
                 pathname === "/contact"
@@ -108,6 +118,15 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
               >
                 About
+              </Link>
+              <Link
+                href="/booking"
+                className={` hover:text-emerald-600 ${
+                  pathname === "/booking" ? "text-emerald-600" : ""
+                }`}
+                onClick={() => setIsOpen(false)}
+              >
+                Booking
               </Link>
               <Link
                 href="/contact"

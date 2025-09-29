@@ -21,7 +21,7 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h4 className="text-white text-sm font-semibold mb-4">
+            <h4 className="text-white text-sm font-semibold mb-1">
               Useful Links:
             </h4>
 
@@ -61,10 +61,15 @@ export default function Footer() {
                   Refund
                 </Link>
               </li>
+              <li className="col-start-2 row-start-4">
+                <Link href="/important" className="hover:text-white">
+                  Important Links
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
-            <h4 className="text-white text-sm font-semibold mb-4">Contact:</h4>
+            <h4 className="text-white text-sm font-semibold mb-2">Contact:</h4>
             <ul className="space-y-2 text-sm">
               <li>Email: info@explorecase.in</li>
               <li>Phone: +91 8126912729</li>
@@ -97,9 +102,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
-          <p>© {new Date().getFullYear()} Explore Case. All rights reserved.</p>
-        </div>
+      </div>
+      <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
+        <p>© {new Date().getFullYear()} Explore Case. All rights reserved.</p>
       </div>
     </footer>
   );

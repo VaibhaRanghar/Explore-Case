@@ -18,10 +18,10 @@ import {
   Wallet,
   CalendarCheck,
 } from "lucide-react";
-import tourData from "@/data/itinerary.json";
 import { useParams, useRouter } from "next/navigation";
 import ComingSoonPage from "@/components/ComingSoon";
 import Image from "next/image";
+import { getPackage, getPriceRange } from "@/lib/package";
 const ToursPage = () => {
   const { id } = useParams();
   const router = useRouter();
@@ -43,9 +43,20 @@ const ToursPage = () => {
     setExpandedDay(expandedDay === dayIndex ? null : dayIndex);
   };
 
-  const currentTour = tourData.filter((item) =>
-    item.id.toString() === id ? item : null
-  )[0];
+  let currentTour;
+  if (!id) {
+    currentTour = null;
+  } else {
+    currentTour = getPackage(id.toString());
+  }
+
+  if (!currentTour)
+    return (
+      <>
+        <ComingSoonPage />
+      </>
+    );
+  currentTour.price = getPriceRange(currentTour?.price);
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % currentTour.images.length);
@@ -62,12 +73,6 @@ const ToursPage = () => {
     setCurrentImageIndex(index);
   };
 
-  if (!currentTour)
-    return (
-      <>
-        <ComingSoonPage />
-      </>
-    );
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-emerald-100">
       {/* Header */}
@@ -252,9 +257,11 @@ const ToursPage = () => {
 
                     {/* Price */}
                     <div className="px-4 py-2">
-                      <p className="text-emerald-900 font-semibold text-xl">
+                      <p className="text-emerald-900 font-semibold  md:text-xl">
                         Price:{" "}
-                        <span className="font-bold">{currentTour.price}</span>
+                        <span className="font-bold">
+                          {currentTour.price[0]} per person.
+                        </span>
                       </p>
                     </div>
 
@@ -519,6 +526,12 @@ const ToursPage = () => {
                   onClick={() => router.push("/booking")}
                 >
                   Book Now
+                </button>
+                <button
+                  className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-emerald-700 transition-all duration-300 transform hover:scale-105 text-lg"
+                  onClick={() => router.push("/customize")}
+                >
+                  Customize Your Trip
                 </button>
               </div>
             </div>

@@ -1,7 +1,12 @@
 [
   {
     "id": 1,
-    "price": "12,000",
+    "price": [
+      "₹12,000 - ₹17,000",
+      "₹17,000 - ₹22,000",
+      "₹22,000 - ₹27,000",
+      "₹27,000 - ₹32,000"
+    ],
     "tourName": "Auli Skiing & Cable Car Tour",
     "about": "Auli, the place blessed by snow is too good to be put in words. The Auli palce is known for skiing more than anything else. It comes in Chamoli district of Uttarakhand district and at a height of nearly 3000 metres with a vertical drop of 500 metres. While skiing might be more a popular reason for coming to Auli, the place is not devoid of other tourist attractions. Auli is the kind of place where pleasure and adventure, wild beauty and slopes of snow field, nature's beauty in its best form comes alive. What makes a trip to Auli so fulfilling and interesting is the fact that the place is flanked by some interesting places to visit in Auli and nearby. One can just stay in Auli Himachal Pradesh, enjoy the skiing and to take a break, just visit any of the nearby paces, like Joshimath, just 16 kilometres. Even the young honeymooners plan their honeymoon in Auli to adore its beauty. That is why these days so many tourism hotels in Auli has been opened by the government.",
     "images": [
@@ -81,7 +86,12 @@
   },
   {
     "id": 2,
-    "price": "18,000",
+    "price": [
+      "₹18,000 - ₹23,000",
+      "₹23,000 - ₹28,000",
+      "₹28,000 - ₹33,000",
+      "₹33,000 - ₹38,000"
+    ],
     "tourName": "Valley of Flowers Trek with Auli & Joshimath",
     "about": "The Valley of Flowers National Park in Uttarakhand is a UNESCO World Heritage Site, renowned for its breathtaking alpine meadows and vibrant blossoms. Nestled in the Garhwal Himalayas, this enchanting valley is carpeted with a diverse range of rare and endemic flora, making it a paradise for nature lovers, trekkers, and photographers. Apart from its floral beauty, the Valley of Flowers trek also offers a chance to spot rare wildlife like the Asiatic black bear, musk deer, red fox, blue sheep, brown bear, and even the elusive snow leopard. Flowing streams, floral pastures, and majestic mountain backdrops add to its magical charm. According to legends, this is the mystical land from where Hanuman collected the Sanjeevani booti to save Lakshmana in the epic Ramayana. Today, the Valley of Flowers stands as one of the most sought-after trekking destinations in India, combining natural beauty, adventure, and spiritual significance.",
     "images": [
@@ -200,7 +210,12 @@
   },
   {
     "id": 3,
-    "price": "8,000",
+    "price": [
+      "₹8,000 - ₹13,000",
+      "₹13,000 - ₹18,000",
+      "₹18,000 - ₹23,000",
+      "₹23,000 - ₹28,000"
+    ],
     "tourName": "Rishikesh River Rafting & Bungee Jumping Package",
     "about": "Known as both the Yoga Capital of the World and the Adventure Capital of India, Rishikesh offers the perfect blend of thrill and nature. This 2 Days / 1 Night Rishikesh Adventure Package includes the most popular activities – river rafting in Rishikesh, bungee jumping, zipline, camping, kayaking, and canoeing. Whether you're seeking adrenaline-pumping sports or a relaxing night under the stars, this package is designed for adventure lovers and group travelers alike. Directly book your Rishikesh adventure tour with Explore Case for an unforgettable experience in the lap of the Himalayas",
     "images": [
@@ -267,7 +282,12 @@
   },
   {
     "id": 4,
-    "price": "6,800",
+    "price": [
+      "₹6,800 - ₹11,800",
+      "₹11,800 - ₹16,800",
+      "₹16,800 - ₹21,800",
+      "₹21,800 - ₹26,800"
+    ],
     "tourName": "Jim Corbett National Park Tour",
     "about": "Jim Corbett Corporate Group Packages from Delhi - Experience the perfect blend of adventure and relaxation with jungle safari tours, wildlife spotting, team outings, and comfortable stays near Jim Corbett National Park. Ideal for corporate trips, family groups, and friends looking for a nature retreat.",
     "images": [
@@ -345,7 +365,12 @@
   },
   {
     "id": 5,
-    "price": "4,800",
+    "price": [
+      "₹4,800 - ₹9,800",
+      "₹9,800 - ₹14,800",
+      "₹14,800 - ₹19,800",
+      "₹19,800 - ₹24,800"
+    ],
     "tourName": "Chopta Tungnath Tour | Chopta Chandrashila",
     "about": "Explore Case specializes in customized Chopta tour packages for travelers seeking the “Mini Switzerland of Uttarakhand.” Nestled in the Garhwal Himalayas, Chopta is the starting point for the famous Tungnath and Chandrashila trek, known for breathtaking sunrises and panoramic views of Nanda Devi, Trishul, and Chaukhamba peaks. Our packages include comfortable camping, guided trekking, cab services, and local experiences so you can enjoy Chopta’s serene meadows and pristine landscapes. At Explore Case, we blend adventure with comfort, making your Chopta journey a perfect mix of spirituality, thrill, and nature's charm.",
     "images": [
@@ -416,7 +441,12 @@
   },
   {
     "id": 6,
-    "price": "6,700",
+    "price": [
+      "₹6,700 - ₹11,700",
+      "₹11,700 - ₹16,700",
+      "₹16,700 - ₹21,700",
+      "₹21,700 - ₹26,700"
+    ],
     "tourName": "Harshil Tour",
     "about": "At Explore Case, we bring you the untouched beauty of Harsil - the hidden gem of Uttarakhand. Surrounded by apple orchards, snow-clad peaks, and the gushing Bhagirathi River, our Harsil tour packages are designed for nature lovers, adventure seekers, and those looking for peace away from crowded tourist spots. From scenic treks to nearby villages, riverside stays, and soulful Himalayan experiences, we provide curated itineraries, comfortable stays, and smooth transportation. With our expertise in Uttarakhand tourism, Explore Case ensures your Harsil trip is memorable, authentic, and hassle-free.",
     "images": [

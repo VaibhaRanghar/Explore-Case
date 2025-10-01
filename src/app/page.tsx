@@ -11,7 +11,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Char Dham Yatra & Holiday Packages | Explore Case</title>
         <meta
@@ -31,6 +31,6 @@ export default function Home() {
       <AdventureTourDesigns />
       <VehicleShowcase />
       <Testimonials />
-    </div>
+    </>
   );
 }

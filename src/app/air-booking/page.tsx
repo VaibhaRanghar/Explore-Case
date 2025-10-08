@@ -1,10 +1,11 @@
-import OnlineBookingForm from "@/components/OnlineBookingForm";
+import BookingForm from "@/components/BookingForm";
+
 import React from "react";
 
 function BookingPage() {
   return (
     <div>
-      <OnlineBookingForm />
+      <BookingForm />
     </div>
   );
 }

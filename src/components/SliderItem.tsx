@@ -16,7 +16,7 @@ function SliderItem({ images, name }: { images: string; name: string }) {
       />
       <div className="flex flex-col items-center p-4 gap-5">
         <h2 className="text-lg">{name}</h2>
-        <Button onClick={() => router.push("/contact")}>Book Now</Button>
+        <Button onClick={() => router.push("/booking")}>Book Now</Button>
       </div>
     </div>
   );

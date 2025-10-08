@@ -23,3 +23,22 @@ This website is designed to offer a seamless and informative experience for user
 <-------------------------------------------------------------------------------------------------------------->
 
 <-------------------------------------------------------------------------------------------------------------->
+
+Online Booking
+
+Package Name: *
+
+Arrival Date: *
+Departure Date: *
+
+Name : *
+Phone: *
+Email: *
+Country:
+State:
+City:
+Street Address:
+Car/Coach:
+
+Submit
+Reset

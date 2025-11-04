@@ -46,10 +46,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <Navbar />
-        <section className="pt-20">{children} </section>
+        <section className="pt-20 ">{children} </section>
         <WhatsAppButton phoneNumber=" 8126912729" />
         <Footer />
       </body>

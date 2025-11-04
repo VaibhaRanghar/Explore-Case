@@ -126,7 +126,7 @@ export default function Navbar() {
                 }`}
                 onClick={() => setIsOpen(false)}
               >
-                Booking
+                Air Booking
               </Link>
               <Link
                 href="/contact"

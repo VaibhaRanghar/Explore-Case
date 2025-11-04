@@ -64,7 +64,7 @@ export default function Testimonials() {
   const [readMore, setReadMore] = useState<{ index: number; show: boolean }[]>(
     testimonials.map((item, index) => ({ index, show: false }))
   );
-  const [itemsPerView, setItemsPerView] = useState(3); 
+  const [itemsPerView, setItemsPerView] = useState(3);
   const [curr, setCurr] = useState<number>(0);
   const stars = Array(5).fill(0);
 
@@ -87,7 +87,7 @@ export default function Testimonials() {
   }, []);
   return (
     <section
-      className="py-20 bg-emerald-50"
+      className="py-20 pb-72 bg-emerald-50"
       aria-roledescription="carousel"
       aria-label="Testimonials"
     >

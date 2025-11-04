@@ -248,7 +248,7 @@ export default function OnlineBookingForm() {
           />
           <meta name="robots" content="noindex, nofollow" />
         </Head>
-        <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-emerald-100 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-emerald-100 py-12 px-4 sm:px-6 lg:px-8 pb-72">
           <div className="max-w-2xl mx-auto">
             <div className="bg-white shadow-2xl rounded-2xl p-8 text-center">
               <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">

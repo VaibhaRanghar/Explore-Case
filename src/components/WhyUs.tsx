@@ -1,7 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { useInView, useMotionValue, useSpring } from "framer-motion";
+import { useCallback, useEffect } from "react";
+
 import pricing from "../../public/whyChooseUs/money.png";
 import business from "../../public/whyChooseUs/businessman.png";
 import travel from "../../public/whyChooseUs/passport.png";
@@ -81,6 +85,164 @@ export default function WhyChooseUs() {
           ))}
         </motion.div>
       </div>
+      {/* <CountingNumbers /> */}
+      <div className="flex flex-col sm:flex-row justify-center mt-20 sm:mt-10 gap-10">
+        {[
+          { text: "Trips and Tours", value: 1500 },
+          { text: "Outdoor Activities", value: 50 },
+          { text: "Countries", value: 40 },
+          { text: "Happy Customers", value: 10000 },
+        ].map((item) => (
+          <CountUpWrapper
+            key={item.text}
+            symbol="+"
+            text={item.text}
+            from={0}
+            to={item.value}
+            duration={1}
+            className="count-up-text"
+          />
+        ))}
+      </div>
     </section>
   );
+}
+
+export function CountUpWrapper({
+  symbol = "+",
+  text = "",
+  from = 0,
+  to = 1,
+  duration = 1,
+  className = "",
+}) {
+  return (
+    <>
+      <div className="flex flex-col gap-5  items-center font-sans ">
+        <p>
+          <span className="text-4xl font-bold">{symbol}</span>
+          <CountUp
+            from={from}
+            to={to}
+            separator=","
+            direction="up"
+            duration={duration}
+            className={`count-up-text text-4xl font-bold ${className}`}
+          />
+        </p>
+        <p className="text-xl font-serif ">{text}</p>
+      </div>
+    </>
+  );
+}
+
+export function CountUp({
+  to = 1,
+  from = 0,
+  direction = "up",
+  delay = 0,
+  duration = 3,
+  className = "",
+  startWhen = true,
+  separator = "",
+  onStart = () => {},
+  onEnd = () => {},
+}) {
+  const ref = useRef<HTMLElement>(null);
+  const motionValue = useMotionValue(direction === "down" ? to : from);
+
+  const damping = 20 + 40 * (1 / duration);
+  const stiffness = 100 * (1 / duration);
+
+  const springValue = useSpring(motionValue, {
+    damping,
+    stiffness,
+  });
+
+  const isInView = useInView(ref, { once: true, margin: "0px" });
+
+  const getDecimalPlaces = (num: any) => {
+    const str = num.toString();
+
+    if (str.includes(".")) {
+      const decimals = str.split(".")[1];
+
+      if (parseInt(decimals) !== 0) {
+        return decimals.length;
+      }
+    }
+
+    return 0;
+  };
+
+  const maxDecimals = Math.max(getDecimalPlaces(from), getDecimalPlaces(to));
+
+  const formatValue = useCallback(
+    (latest: number) => {
+      const hasDecimals = maxDecimals > 0;
+
+      const options = {
+        useGrouping: !!separator,
+        minimumFractionDigits: hasDecimals ? maxDecimals : 0,
+        maximumFractionDigits: hasDecimals ? maxDecimals : 0,
+      };
+
+      const formattedNumber = Intl.NumberFormat("en-US", options).format(
+        latest
+      );
+
+      return separator
+        ? formattedNumber.replace(/,/g, separator)
+        : formattedNumber;
+    },
+    [maxDecimals, separator]
+  );
+
+  useEffect(() => {
+    if (ref.current) {
+      ref.current.textContent = formatValue(direction === "down" ? to : from);
+    }
+  }, [from, to, direction, formatValue]);
+
+  useEffect(() => {
+    if (isInView && startWhen) {
+      if (typeof onStart === "function") onStart();
+
+      const timeoutId = setTimeout(() => {
+        motionValue.set(direction === "down" ? from : to);
+      }, delay * 1000);
+
+      const durationTimeoutId = setTimeout(() => {
+        if (typeof onEnd === "function") onEnd();
+      }, delay * 1000 + duration * 1000);
+
+      return () => {
+        clearTimeout(timeoutId);
+        clearTimeout(durationTimeoutId);
+      };
+    }
+  }, [
+    isInView,
+    startWhen,
+    motionValue,
+    direction,
+    from,
+    to,
+    delay,
+    onStart,
+    onEnd,
+    duration,
+  ]);
+
+  useEffect(() => {
+    const unsubscribe = springValue.on("change", (latest) => {
+      if (ref.current) {
+        ref.current.textContent = formatValue(latest);
+      }
+    });
+
+    return () => unsubscribe();
+  }, [springValue, formatValue]);
+
+  return <span className={className} ref={ref} />;
 }

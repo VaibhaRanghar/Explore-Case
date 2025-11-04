@@ -3,7 +3,7 @@ import { FileQuestion } from "lucide-react";
 
 export default function ComingSoonPage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-emerald-50 px-6 text-center">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-emerald-50 px-6 text-center pb-72">
       {/* Icon */}
       <div className="bg-emerald-100 p-6 rounded-full mb-6 shadow-md">
         <FileQuestion className="w-16 h-16 text-emerald-600" />

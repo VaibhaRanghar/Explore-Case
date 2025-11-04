@@ -3,7 +3,7 @@ import React from "react";
 
 function Terms() {
   return (
-    <main className="max-w-4xl mx-auto px-6 mb-12 py-12">
+    <main className="max-w-4xl mx-auto px-6 mb-12 py-12 pb-72">
       <div className="animate-fade-in  translate-y-8">
         <div className="text-center mb-12">
           <div

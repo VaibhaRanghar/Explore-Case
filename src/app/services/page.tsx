@@ -53,7 +53,7 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-gray-100 pb-16">
+    <div className="min-h-screen bg-gray-100  pb-10 sm:pb-32 md:pb-72">
       <h1 className="md:pl-24 text-4xl font-bold pl-16 mb-12 bg-emerald-600 text-white p-6 ">
         Our Services
       </h1>

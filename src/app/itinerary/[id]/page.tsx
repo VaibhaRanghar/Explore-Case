@@ -74,7 +74,7 @@ const ToursPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-emerald-100">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-emerald-100 pb-72">
       {/* Header */}
       <header
         className={`bg-white shadow-lg border-b-4 border-emerald-500 transition-all duration-1000 ${

@@ -2,88 +2,80 @@
   {
     "id": 1,
     "price": [
-      "₹12,000 - ₹17,000",
-      "₹17,000 - ₹22,000",
-      "₹22,000 - ₹27,000",
-      "₹27,000 - ₹32,000"
+      "₹4,800 - ₹9,800",
+      "₹9,800 - ₹14,800",
+      "₹14,800 - ₹19,800",
+      "₹19,800 - ₹24,800"
     ],
-    "tourName": "Auli Skiing & Cable Car Tour",
-    "about": "Auli, the place blessed by snow is too good to be put in words. The Auli palce is known for skiing more than anything else. It comes in Chamoli district of Uttarakhand district and at a height of nearly 3000 metres with a vertical drop of 500 metres. While skiing might be more a popular reason for coming to Auli, the place is not devoid of other tourist attractions. Auli is the kind of place where pleasure and adventure, wild beauty and slopes of snow field, nature's beauty in its best form comes alive. What makes a trip to Auli so fulfilling and interesting is the fact that the place is flanked by some interesting places to visit in Auli and nearby. One can just stay in Auli Himachal Pradesh, enjoy the skiing and to take a break, just visit any of the nearby paces, like Joshimath, just 16 kilometres. Even the young honeymooners plan their honeymoon in Auli to adore its beauty. That is why these days so many tourism hotels in Auli has been opened by the government.",
+    "tourName": "Chopta Tungnath Tour | Chopta Chandrashila",
+    "about": "Explore Case specializes in customized Chopta tour packages for travelers seeking the “Mini Switzerland of Uttarakhand.” Nestled in the Garhwal Himalayas, Chopta is the starting point for the famous Tungnath and Chandrashila trek, known for breathtaking sunrises and panoramic views of Nanda Devi, Trishul, and Chaukhamba peaks. Our packages include comfortable camping, guided trekking, cab services, and local experiences so you can enjoy Chopta’s serene meadows and pristine landscapes. At Explore Case, we blend adventure with comfort, making your Chopta journey a perfect mix of spirituality, thrill, and nature's charm.",
     "images": [
-      "/adventures/itinerary/auli1.jpg",
-      "/adventures/itinerary/auli2.jpg",
-      "/adventures/itinerary/auli3.jpg"
+      "/adventures/itinerary/chopta 1.jpg",
+      "/adventures/itinerary/chopta 2.webp",
+      "/adventures/itinerary/chopta 3.jpg"
     ],
-    "heroImage": "/adventures/auli.jpg",
+    "heroImage": "/adventures/tents and camp.jpg",
     "duration": "3 Days / 2 Nights",
-    "startPoint": "Haridwar Railway Station / Dehradun Airport",
-    "endPoint": "Haridwar Railway Station / Dehradun Airport",
+    "startPoint": "",
+    "endPoint": "",
     "itinerary": [
       {
-        "day": 1,
-        "title": "Haridwar - Auli",
+        "day": "Day 1",
+        "title": "Arrival & Check-in",
         "activities": [
-          "Early morning pick-up from Haridwar Railway Station / Dehradun Airport (around 08:00 hrs).",
-          "Drive towards Auli, enjoying the scenic route via Devprayag and Rudraprayag.",
-          "On arrival, check in at your resort.",
-          "Relax and soak in the refreshing mountain weather.",
-          "Overnight stay at Auli."
+          "Arrive at Chopta, often called the Mini Switzerland of Uttarakhand.",
+          "Check into your scenic campsite surrounded by lush meadows and breathtaking Himalayan landscapes.",
+          "Spend the evening relaxing in the refreshing mountain air.",
+          "Enjoy a hearty dinner and an overnight stay at the camp."
         ]
       },
       {
-        "day": 2,
-        "title": "Explore Auli",
+        "day": "Day 2",
+        "title": "Tungnath Temple & Chandrashila Trek",
         "activities": [
-          "After breakfast at the resort, proceed to Auli Ropeway (cable car charges extra, payable directly).",
-          "Enjoy a breathtaking ride offering panoramic views of the snow-clad Himalayas, oak forests, and alpine meadows.",
-          "Spend the entire day exploring the beauty of Auli - a paradise for nature lovers and adventure seekers.",
-          "Return to the resort by evening and relax.",
-          "Overnight stay at Auli."
+          "Begin an early morning trek to Tungnath Temple, the highest Shiva temple in the world, and continue towards Chandrashila Peak.",
+          "The 4-hour journey takes you through enchanting forests and meadows.",
+          "From the summit, witness a spectacular 360-degree view of the Himalayas, including Nanda Devi, Trishul, and Chaukhamba peaks.",
+          "Trek back to Chopta by evening, followed by dinner and a peaceful overnight stay at the camp."
         ]
       },
       {
-        "day": 3,
-        "title": "Auli - Haridwar ",
+        "day": "Day 3",
+        "title": "Departure from Chopta",
         "activities": [
-          "After breakfast, check out from the resort.",
-          "Drive back towards Haridwar / Dehradun.",
-          "Drop at Railway Station / Airport for your onward journey.",
-          "Tour ends with sweet & unforgettable memories of Auli!"
+          "After breakfast, bid farewell to Chopta.",
+          "Begin your return journey with unforgettable memories of this spiritual and adventurous Himalayan experience."
         ]
       }
     ],
     "inclusions": [
-      "Transport from Haridwar to Haridwar by Indigo (02-03 Pax) / Innova (04-06 Pax) / Tempo Traveller (07-10 Pax)",
-      "Non-AC vehicles will be used in hill areas for safety",
-      "Toll taxes, interstate taxes & parking charges",
-      "Driver's allowance & fuel charges",
-      "Accommodation in mentioned hotels/resorts for 02 nights (twin/triple sharing)",
-      "Daily breakfast & dinner at the hotel",
-      "All currently applicable hotel & transport taxes"
+      "Accommodation on a sharing basis in scenic camps.",
+      "Meals: Breakfast, Dinner, and evening tea.",
+      "Trek to Tungnath Temple and Chandrashila Summit with guided support."
     ],
     "exclusions": [
-      "Airfare / train fare to Haridwar & return",
-      "5% GST (Government Service Tax)",
-      "Meals other than those specified in inclusions",
-      "Ropeway / cable car / helicopter tickets and VIP darshan charges (if any)",
-      "Pony / Doli / Mule / Porter charges for personal luggage",
-      "Personal expenses such as tips, laundry, telephone calls, beverages, bottled water, liquor, etc.",
-      "Entrance fees at monuments, parks, or sightseeing points not mentioned in the inclusions",
-      "Travel Insurance of any kind",
-      "Expenses incurred due to bad weather, natural calamities, landslides, strikes, or road closures",
-      "Any other services not specified under “Tour Includes”"
+      "Any transport services to/from Chopta.",
+      "International or domestic air and rail tickets.",
+      "Meals or drinks not mentioned in the itinerary.",
+      "Expenses such as laundry, porter, tips, camera fees, ropeway charges, or entrance fees.",
+      "Travel or medical insurance and any costs incurred due to bad weather, road closures, landslides, or other unforeseen circumstances.",
+      "Any increase in government taxes.",
+      "Any service not specifically mentioned in the inclusions."
     ],
     "termsAndConditions": [
-      "In case of any increase in hotel rates, transport charges, fuel prices, or government taxes, the package cost will be revised accordingly.",
-      "Explore Case is not holding any hotel or transport reservations at this stage. Confirmation will be subject to availability at the time of booking and will be shared by email once secured.",
-      "Any change in train/flight schedule or timing that requires amendment of the itinerary may lead to additional costs, which will be informed separately and will be payable by the guest.",
-      "If group members do not arrive or depart with the group, additional transfer charges will apply.",
-      "Meals are included only as mentioned in the itinerary. Meals required during transfers, sightseeing, or day trips (not specified in inclusions) will be charged additionally on actuals.",
-      "The rates quoted are valid only for the specific dates mentioned in the proposal/itinerary.",
-      "Budget hotels in India provide basic accommodation and facilities, and service standards may vary by region.",
-      "Explore Case shall not be held responsible for any immigration/visa-related issues or travel document complications. In such cases, the cancellation policy will apply in full."
+      "Booking confirmed on advance payment and full payment required before trek.",
+      "Cancellation Policy: Before 15 days = 80% refund, Within 15 days = 50% refund whereas no-shows = no refund.",
+      "Itinerary may change due to weather, road closures, landslides, or unforeseen events.",
+      "Participants must be physically fit and inform company of medical conditions.",
+      "Travel/medical insurance is recommended.",
+      "Accommodation is on sharing basis; meals include Breakfast & Dinner with evening tea.",
+      "Company is not liable for loss, accident, or injury; participants responsible for personal belongings.",
+      "Additional expenses (tips, laundry, camera fees, entrance charges) are borne by participants.",
+      "Any increase in government taxes or fees will be added to package cost.",
+      "Force majeure: Natural calamities, strikes, or unforeseen events may lead to itinerary changes; no compensation is payable."
     ]
   },
+  
   {
     "id": 2,
     "price": [
@@ -363,80 +355,89 @@
       "No smoking, drinking, or littering inside the park"
     ]
   },
-  {
+{
     "id": 5,
     "price": [
-      "₹4,800 - ₹9,800",
-      "₹9,800 - ₹14,800",
-      "₹14,800 - ₹19,800",
-      "₹19,800 - ₹24,800"
+      "₹12,000 - ₹17,000",
+      "₹17,000 - ₹22,000",
+      "₹22,000 - ₹27,000",
+      "₹27,000 - ₹32,000"
     ],
-    "tourName": "Chopta Tungnath Tour | Chopta Chandrashila",
-    "about": "Explore Case specializes in customized Chopta tour packages for travelers seeking the “Mini Switzerland of Uttarakhand.” Nestled in the Garhwal Himalayas, Chopta is the starting point for the famous Tungnath and Chandrashila trek, known for breathtaking sunrises and panoramic views of Nanda Devi, Trishul, and Chaukhamba peaks. Our packages include comfortable camping, guided trekking, cab services, and local experiences so you can enjoy Chopta’s serene meadows and pristine landscapes. At Explore Case, we blend adventure with comfort, making your Chopta journey a perfect mix of spirituality, thrill, and nature's charm.",
+    "tourName": "Auli Skiing & Cable Car Tour",
+    "about": "Auli, the place blessed by snow is too good to be put in words. The Auli palce is known for skiing more than anything else. It comes in Chamoli district of Uttarakhand district and at a height of nearly 3000 metres with a vertical drop of 500 metres. While skiing might be more a popular reason for coming to Auli, the place is not devoid of other tourist attractions. Auli is the kind of place where pleasure and adventure, wild beauty and slopes of snow field, nature's beauty in its best form comes alive. What makes a trip to Auli so fulfilling and interesting is the fact that the place is flanked by some interesting places to visit in Auli and nearby. One can just stay in Auli Himachal Pradesh, enjoy the skiing and to take a break, just visit any of the nearby paces, like Joshimath, just 16 kilometres. Even the young honeymooners plan their honeymoon in Auli to adore its beauty. That is why these days so many tourism hotels in Auli has been opened by the government.",
     "images": [
-      "/adventures/itinerary/chopta 1.jpg",
-      "/adventures/itinerary/chopta 2.webp",
-      "/adventures/itinerary/chopta 3.jpg"
+      "/adventures/itinerary/auli1.jpg",
+      "/adventures/itinerary/auli2.jpg",
+      "/adventures/itinerary/auli3.jpg"
     ],
-    "heroImage": "/adventures/tents and camp.jpg",
+    "heroImage": "/adventures/auli.jpg",
     "duration": "3 Days / 2 Nights",
-    "startPoint": "",
-    "endPoint": "",
+    "startPoint": "Haridwar Railway Station / Dehradun Airport",
+    "endPoint": "Haridwar Railway Station / Dehradun Airport",
     "itinerary": [
       {
-        "day": "Day 1",
-        "title": "Arrival & Check-in",
+        "day": 1,
+        "title": "Haridwar - Auli",
         "activities": [
-          "Arrive at Chopta, often called the Mini Switzerland of Uttarakhand.",
-          "Check into your scenic campsite surrounded by lush meadows and breathtaking Himalayan landscapes.",
-          "Spend the evening relaxing in the refreshing mountain air.",
-          "Enjoy a hearty dinner and an overnight stay at the camp."
+          "Early morning pick-up from Haridwar Railway Station / Dehradun Airport (around 08:00 hrs).",
+          "Drive towards Auli, enjoying the scenic route via Devprayag and Rudraprayag.",
+          "On arrival, check in at your resort.",
+          "Relax and soak in the refreshing mountain weather.",
+          "Overnight stay at Auli."
         ]
       },
       {
-        "day": "Day 2",
-        "title": "Tungnath Temple & Chandrashila Trek",
+        "day": 2,
+        "title": "Explore Auli",
         "activities": [
-          "Begin an early morning trek to Tungnath Temple, the highest Shiva temple in the world, and continue towards Chandrashila Peak.",
-          "The 4-hour journey takes you through enchanting forests and meadows.",
-          "From the summit, witness a spectacular 360-degree view of the Himalayas, including Nanda Devi, Trishul, and Chaukhamba peaks.",
-          "Trek back to Chopta by evening, followed by dinner and a peaceful overnight stay at the camp."
+          "After breakfast at the resort, proceed to Auli Ropeway (cable car charges extra, payable directly).",
+          "Enjoy a breathtaking ride offering panoramic views of the snow-clad Himalayas, oak forests, and alpine meadows.",
+          "Spend the entire day exploring the beauty of Auli - a paradise for nature lovers and adventure seekers.",
+          "Return to the resort by evening and relax.",
+          "Overnight stay at Auli."
         ]
       },
       {
-        "day": "Day 3",
-        "title": "Departure from Chopta",
+        "day": 3,
+        "title": "Auli - Haridwar ",
         "activities": [
-          "After breakfast, bid farewell to Chopta.",
-          "Begin your return journey with unforgettable memories of this spiritual and adventurous Himalayan experience."
+          "After breakfast, check out from the resort.",
+          "Drive back towards Haridwar / Dehradun.",
+          "Drop at Railway Station / Airport for your onward journey.",
+          "Tour ends with sweet & unforgettable memories of Auli!"
         ]
       }
     ],
     "inclusions": [
-      "Accommodation on a sharing basis in scenic camps.",
-      "Meals: Breakfast, Dinner, and evening tea.",
-      "Trek to Tungnath Temple and Chandrashila Summit with guided support."
+      "Transport from Haridwar to Haridwar by Indigo (02-03 Pax) / Innova (04-06 Pax) / Tempo Traveller (07-10 Pax)",
+      "Non-AC vehicles will be used in hill areas for safety",
+      "Toll taxes, interstate taxes & parking charges",
+      "Driver's allowance & fuel charges",
+      "Accommodation in mentioned hotels/resorts for 02 nights (twin/triple sharing)",
+      "Daily breakfast & dinner at the hotel",
+      "All currently applicable hotel & transport taxes"
     ],
     "exclusions": [
-      "Any transport services to/from Chopta.",
-      "International or domestic air and rail tickets.",
-      "Meals or drinks not mentioned in the itinerary.",
-      "Expenses such as laundry, porter, tips, camera fees, ropeway charges, or entrance fees.",
-      "Travel or medical insurance and any costs incurred due to bad weather, road closures, landslides, or other unforeseen circumstances.",
-      "Any increase in government taxes.",
-      "Any service not specifically mentioned in the inclusions."
+      "Airfare / train fare to Haridwar & return",
+      "5% GST (Government Service Tax)",
+      "Meals other than those specified in inclusions",
+      "Ropeway / cable car / helicopter tickets and VIP darshan charges (if any)",
+      "Pony / Doli / Mule / Porter charges for personal luggage",
+      "Personal expenses such as tips, laundry, telephone calls, beverages, bottled water, liquor, etc.",
+      "Entrance fees at monuments, parks, or sightseeing points not mentioned in the inclusions",
+      "Travel Insurance of any kind",
+      "Expenses incurred due to bad weather, natural calamities, landslides, strikes, or road closures",
+      "Any other services not specified under “Tour Includes”"
     ],
     "termsAndConditions": [
-      "Booking confirmed on advance payment and full payment required before trek.",
-      "Cancellation Policy: Before 15 days = 80% refund, Within 15 days = 50% refund whereas no-shows = no refund.",
-      "Itinerary may change due to weather, road closures, landslides, or unforeseen events.",
-      "Participants must be physically fit and inform company of medical conditions.",
-      "Travel/medical insurance is recommended.",
-      "Accommodation is on sharing basis; meals include Breakfast & Dinner with evening tea.",
-      "Company is not liable for loss, accident, or injury; participants responsible for personal belongings.",
-      "Additional expenses (tips, laundry, camera fees, entrance charges) are borne by participants.",
-      "Any increase in government taxes or fees will be added to package cost.",
-      "Force majeure: Natural calamities, strikes, or unforeseen events may lead to itinerary changes; no compensation is payable."
+      "In case of any increase in hotel rates, transport charges, fuel prices, or government taxes, the package cost will be revised accordingly.",
+      "Explore Case is not holding any hotel or transport reservations at this stage. Confirmation will be subject to availability at the time of booking and will be shared by email once secured.",
+      "Any change in train/flight schedule or timing that requires amendment of the itinerary may lead to additional costs, which will be informed separately and will be payable by the guest.",
+      "If group members do not arrive or depart with the group, additional transfer charges will apply.",
+      "Meals are included only as mentioned in the itinerary. Meals required during transfers, sightseeing, or day trips (not specified in inclusions) will be charged additionally on actuals.",
+      "The rates quoted are valid only for the specific dates mentioned in the proposal/itinerary.",
+      "Budget hotels in India provide basic accommodation and facilities, and service standards may vary by region.",
+      "Explore Case shall not be held responsible for any immigration/visa-related issues or travel document complications. In such cases, the cancellation policy will apply in full."
     ]
   },
   {

@@ -7,11 +7,12 @@ import { useRouter } from "next/navigation";
 const datax = [
   {
     id: 1,
-    images: "/adventures/auli.jpg",
-    name: "Auli Skiing & Cable Car Tour",
+    images: "/adventures/tents and camp.jpg",
+    name: "Chopta Tungnath Tour | Chopta Chandrashila",
     description:
-      "Auli, located in Chamoli district of Uttarakhand, is a paradise for snow lovers and adventure seekers. Known as the Skiing Capital of India, it offers world-class skiing slopes, panoramic views of the Nanda Devi and Himalayan ranges, and the famous Auli Ropeway (cable car) - one of Asia's longest cable cars. With Explore Case, you can enjoy skiing, cable car rides, and breathtaking snow adventures in a safe and exciting way",
+      "There's no better way to connect with nature than trekking through the Himalayas and spending the night under the stars in cozy camping tents. With Explore Case, we bring you thrilling trekking experiences combined with safe camping stays at scenic spots across Uttarakhand and Himachal. Our trekking & camping packages are perfect for adventure enthusiasts, nature lovers, students, families, and groups who want a blend of adventure and peace.",
   },
+
   {
     id: 2,
     images: "/adventures/Valley-of-Flowers.webp",
@@ -35,10 +36,10 @@ const datax = [
   },
   {
     id: 5,
-    images: "/adventures/tents and camp.jpg",
-    name: "Chopta Tungnath Tour | Chopta Chandrashila",
+    images: "/adventures/auli.jpg",
+    name: "Auli Skiing & Cable Car Tour",
     description:
-      "There's no better way to connect with nature than trekking through the Himalayas and spending the night under the stars in cozy camping tents. With Explore Case, we bring you thrilling trekking experiences combined with safe camping stays at scenic spots across Uttarakhand and Himachal. Our trekking & camping packages are perfect for adventure enthusiasts, nature lovers, students, families, and groups who want a blend of adventure and peace.",
+      "Auli, located in Chamoli district of Uttarakhand, is a paradise for snow lovers and adventure seekers. Known as the Skiing Capital of India, it offers world-class skiing slopes, panoramic views of the Nanda Devi and Himalayan ranges, and the famous Auli Ropeway (cable car) - one of Asia's longest cable cars. With Explore Case, you can enjoy skiing, cable car rides, and breathtaking snow adventures in a safe and exciting way",
   },
   {
     id: 6,

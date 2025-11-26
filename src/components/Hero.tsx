@@ -24,6 +24,10 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
+        <h2 className="visually-hidden">
+          Why We Are the Best Travel Agency for Char Dham Yatra
+        </h2>
+
         <h2 className="text-5xl md:text-7xl font-bold mb-6">
           Discover Your Next
           <span className="block mt-2 text-emerald-400">Adventure</span>

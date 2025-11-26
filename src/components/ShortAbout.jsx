@@ -9,7 +9,7 @@ function ShortAbout() {
   const sectionRef = useRef(null);
   const observerRef = useRef(null);
 
-  const fullText = "Char Dham Yatra & Holiday Packages | Explore Case";
+  const fullText = "The Best Tour and Travel Agency in Dehradun & Uttarakhand";
 
   // Typing animation effect
   useEffect(() => {

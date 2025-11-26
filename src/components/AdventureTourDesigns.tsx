@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 const datax = [
   {
     id: 1,
+    url: "chopta-tungnath-trek-package",
     images: "/adventures/tents and camp.jpg",
     name: "Chopta Tungnath Tour | Chopta Chandrashila",
     description:
@@ -15,6 +16,7 @@ const datax = [
 
   {
     id: 2,
+    url: "valley-of-flowers-tour-package",
     images: "/adventures/Valley-of-Flowers.webp",
     name: "Valley of Flowers Trek",
     description:
@@ -22,6 +24,7 @@ const datax = [
   },
   {
     id: 3,
+    url: "rishikesh-rafting-bungee-package",
     images: "/adventures/rafting.jpg",
     name: "Rishikesh River Rafting & Bungee Jumping Package",
     description:
@@ -29,6 +32,7 @@ const datax = [
   },
   {
     id: 4,
+    url: "jim-corbett-national-park-tour-package",
     images: "/adventures/jim corbett.webp",
     name: "Jim Corbett National Park Safari",
     description:
@@ -36,6 +40,7 @@ const datax = [
   },
   {
     id: 5,
+    url: "auli-skiing-tour-package",
     images: "/adventures/auli.jpg",
     name: "Auli Skiing & Cable Car Tour",
     description:
@@ -43,6 +48,7 @@ const datax = [
   },
   {
     id: 6,
+    url: "harsil-tour-package-in-uttarakhand",
     images: "/adventures/harshil.webp",
     name: "Harshil Tour",
     description:
@@ -99,7 +105,7 @@ const AdventureTourDesigns = () => {
                   <div className="flex items-center justify-between">
                     <button
                       className="bg-emerald-500 text-white px-4 py-2 rounded-lg hover:bg-emerald-600 transition-colors duration-300 flex items-center"
-                      onClick={() => router.push(`/itinerary/${tour.id}`)}
+                      onClick={() => router.push(`/itinerary/${tour.url}`)}
                     >
                       View Details
                       <ArrowRight className="w-4 h-4 ml-1" />

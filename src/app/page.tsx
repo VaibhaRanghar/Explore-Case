@@ -13,14 +13,17 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Char Dham Yatra & Holiday Packages | Explore Case</title>
+        <title>
+          Best Travel Agency in Uttarakhand & Dehradun | Char Dham Yatra
+          Specialist | Explore Case
+        </title>
         <meta
           name="title"
-          content="Char Dham Yatra & Holiday Packages | Explore Case"
+          content="Best Travel Agency in Uttarakhand & Dehradun | Char Dham Yatra Specialist | Explore Case"
         />
         <meta
           name="description"
-          content="Book Char Dham Yatra, domestic & international holiday packages with Explore Case. Hotels, cab services & customized tours for families & groups."
+          content="Explore Case is the best travel agency in Uttarakhand and a top-rated tour and travel agency in Dehradun. We are your trusted partner and the best travel agency for Char Dham Yatra, family, and adventure packages."
         />
       </Head>
       <Navbar />

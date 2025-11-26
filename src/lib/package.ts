@@ -3,12 +3,17 @@ function getAllPackages() {
   return toursData;
 }
 
-function getPackage(id: string) {
+function getPackageById(id: string) {
   const data = toursData.filter((tour) => tour.id.toString() === id);
   if (data.length === 0) return null;
   return data[0];
 }
 
+function getPackageByURL(url: string) {
+  const data = toursData.filter((tour) => tour.url.toString() === url);
+  if (data.length === 0) return null;
+  return data[0];
+}
 function getPackagesList() {
   const data = getAllPackages();
   const list = data.map((tour) => ({
@@ -35,4 +40,10 @@ function getPriceRange(priceArray: string[] | undefined): string[] {
 
   return new Array(`₹${minPrice} - ${maxPrice}`);
 }
-export { getAllPackages, getPackage, getPackagesList, getPriceRange };
+export {
+  getAllPackages,
+  getPackageById,
+  getPackageByURL,
+  getPackagesList,
+  getPriceRange,
+};

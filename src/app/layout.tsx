@@ -33,9 +33,10 @@ export const metadata: Metadata = {
       type: "image/png",
     },
   ],
-  title: "Char Dham Yatra & Holiday Packages | Explore Case",
+  title:
+    "Best Travel Agency in Uttarakhand & Dehradun | Char Dham Yatra Specialist | Explore Case",
   description:
-    "Book Char Dham Yatra, domestic & international holiday packages with Explore Case. Hotels, cab services & customized tours for families & groups",
+    "Explore Case is the best travel agency in Uttarakhand and a top-rated tour and travel agency in Dehradun. We are your trusted partner and the best travel agency for Char Dham Yatra, family, and adventure packages.",
 };
 
 export default function RootLayout({

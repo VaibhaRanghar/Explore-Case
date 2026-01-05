@@ -60,6 +60,16 @@ export default function Navbar() {
               About
             </Link>
             <Link
+              href="/car-rental"
+              className={` hover:text-emerald-600 ${
+                pathname === "/car-rental"
+                  ? "text-emerald-600 underline underline-offset-4 decoration-2 "
+                  : ""
+              }`}
+            >
+              Taxi
+            </Link>
+            <Link
               href="/air-booking"
               className={` hover:text-emerald-600 ${
                 pathname === "/air-booking"
@@ -118,6 +128,15 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
               >
                 About
+              </Link>
+              <Link
+                href="/car-rental"
+                className={` hover:text-emerald-600 ${
+                  pathname === "/car-rental" ? "text-emerald-600" : ""
+                }`}
+                onClick={() => setIsOpen(false)}
+              >
+                Taxi
               </Link>
               <Link
                 href="/air-booking"

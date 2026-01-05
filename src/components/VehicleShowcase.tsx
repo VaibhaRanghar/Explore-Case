@@ -11,6 +11,7 @@ const VehicleShowcase = () => {
     { id: 2, src: "/cars/swift.jpg", alt: "Swift" },
     { id: 3, src: "/cars/car3.jpg", alt: "Traveller" },
     { id: 4, src: "/cars/car4.webp", alt: "Innova" },
+    { id: 5, src: "/cars/car5.JPG", alt: "Urbania" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

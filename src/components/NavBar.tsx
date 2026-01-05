@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import BookNowPopup from "./BookNowPopup";
-import logo from "../../public/logo1.svg";
+import logo from "../../public/explore case logo-01.png";
 import { usePathname } from "next/navigation"; //Use pathName
 
 export default function Navbar() {
@@ -24,7 +24,7 @@ export default function Navbar() {
             className="text-2xl font-bold text-emerald-600 flex gap-4 items-center"
             onClick={() => setIsOpen(false)}
           >
-            <Image src={logo} height={40} width={40} alt="Logo" /> ExploreCase
+            <Image src={logo} height={60} width={60} alt="Logo" /> ExploreCase
           </Link>
 
           {/* Desktop Menu */}

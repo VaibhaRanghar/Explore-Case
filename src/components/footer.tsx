@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Instagram, Facebook, Twitter } from "lucide-react";
 import Image from "next/image";
-
+import logo from "../../public/explore case logo-01.png";
 export default function Footer() {
   return (
     <div className="relative ">
@@ -19,7 +19,7 @@ export default function Footer() {
               <h3 className="text-white text-lg font-bold mb-4 flex items-center ">
                 Explore Case{" "}
                 <span>
-                  <Image src={"/logo.png"} alt="Logo" width={40} height={40} />
+                  <Image src={logo} height={60} width={60} alt="Logo" />
                 </span>
               </h3>
               <p className="text-sm">

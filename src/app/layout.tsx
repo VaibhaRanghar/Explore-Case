@@ -51,7 +51,7 @@ export default function RootLayout({
       >
         <Navbar />
         <section className="pt-20 min-h-screen">{children} </section>
-        <WhatsAppButton phoneNumber=" 8126912729" />
+        <WhatsAppButton phoneNumber="7078235487" />
         <Footer />
       </body>
     </html>

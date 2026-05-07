@@ -282,7 +282,7 @@ const ToursPage = () => {
                         <div className="flex flex-wrap gap-2">
                           <button
                             onClick={() =>
-                              window.open("https://wa.me/7078235487", "_blank")
+                              window.open("https://wa.me/7536061516", "_blank")
                             }
                             className="flex-1 min-w-[80px] flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-3 rounded-lg transition-all duration-200 hover:shadow-md"
                           >
@@ -293,7 +293,7 @@ const ToursPage = () => {
                           </button>
                           <button
                             onClick={() =>
-                              window.open("tel:+917078235487", "_blank")
+                              window.open("tel:+917536061516", "_blank")
                             }
                             className="flex-1 min-w-[80px] flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-3 rounded-lg transition-all duration-200 hover:shadow-md"
                           >

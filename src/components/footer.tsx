@@ -83,7 +83,7 @@ export default function Footer() {
               </h4>
               <ul className="space-y-2 text-sm">
                 <li>Email: info@explorecase.in</li>
-                <li>Phone: +91 7078235487</li>
+                <li>Phone:+91 8006461516, +91 7536061516</li>
                 <li>Address: Dehradun, Uttarakhand, India</li>
               </ul>
             </div>

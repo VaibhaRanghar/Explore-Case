@@ -32,7 +32,7 @@ export default function BookNowPopup({ isOpen, onClose }: BookNowPopupProps) {
           <div className="grid gap-4 py-4  px-3">
             <Button
               className="w-full flex items-center justify-center"
-              onClick={() => (window.location.href = "tel:+917078235487")}
+              onClick={() => (window.location.href = "tel:+917536061516")}
             >
               <Phone className="mr-2" size={20} />
               Call Us

@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import BookNowPopup from "./BookNowPopup";
 import logo from "../../public/explore case logo-01.png";
+
 import { usePathname } from "next/navigation"; //Use pathName
 
 export default function Navbar() {

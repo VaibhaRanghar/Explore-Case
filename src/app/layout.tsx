@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "./globals.css"
 import Navbar from "@/components/NavBar";
 import WhatsAppButton from "@/components/WhatsappBtn";
 import Footer from "@/components/footer";
@@ -51,7 +51,7 @@ export default function RootLayout({
       >
         <Navbar />
         <section className="pt-20 min-h-screen">{children} </section>
-        <WhatsAppButton phoneNumber="7078235487" />
+        <WhatsAppButton phoneNumber="7536061516" />
         <Footer />
       </body>
     </html>

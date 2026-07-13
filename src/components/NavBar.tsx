@@ -61,9 +61,9 @@ export default function Navbar() {
               About
             </Link>
             <Link
-              href="/car-rental"
+              href="/taxi-services-in-dehradun"
               className={` hover:text-emerald-600 ${
-                pathname === "/car-rental"
+                pathname === "/taxi-services-in-dehradun"
                   ? "text-emerald-600 underline underline-offset-4 decoration-2 "
                   : ""
               }`}
@@ -131,9 +131,9 @@ export default function Navbar() {
                 About
               </Link>
               <Link
-                href="/car-rental"
+                href="/taxi-services-in-dehradun"
                 className={` hover:text-emerald-600 ${
-                  pathname === "/car-rental" ? "text-emerald-600" : ""
+                  pathname === "/taxi-services-in-dehradun" ? "text-emerald-600" : ""
                 }`}
                 onClick={() => setIsOpen(false)}
               >

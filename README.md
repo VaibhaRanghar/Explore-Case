@@ -18,4 +18,3 @@ This website is designed to offer a seamless and informative experience for user
 - **Next.js:** React framework for building server-rendered and statically generated applications.
 - **Tailwind CSS:** Utility-first CSS framework for rapid UI development.
 - **Lucide React:** SVG icons.
-- **Resend:** Reliable email sending service (or similar).
